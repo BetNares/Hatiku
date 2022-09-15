@@ -1,0 +1,5 @@
+C:\Users\LENOVO\source\repos\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.csprojAssemblyReference.cache
+C:\Users\LENOVO\source\repos\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LENOVO\source\repos\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.AssemblyInfoInputs.cache
+C:\Users\LENOVO\source\repos\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.AssemblyInfo.cs
+C:\Users\LENOVO\source\repos\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.csproj.CoreCompileInputs.cache
