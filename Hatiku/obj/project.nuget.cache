@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "b4IWc6tilUj4vTTGXO3zaNk5DGEnjRmxtzXybt8+5dwjpvCEm+IK55qrQbO1wSQ9tqlDPo+nd+NRqvVoWdq8sA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\LENOVO\\source\\repos\\BetNares\\Hatiku\\Hatiku\\Hatiku.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\system.componentmodel\\4.3.0\\system.componentmodel.4.3.0.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512"
+  ],
+  "logs": []
+}
