@@ -7,13 +7,13 @@ using System.Windows.Forms;
 
 namespace Hatiku.Views
 {
-    public interface IAdminView: IView
+    public interface IPolicyView: IView
     {
-        int UserId { get; set; }
-        string Username { get; set; }
-        string Password { get; set; }
+        int PolicyId { get; set; }
+        string Name { get; set; }
+        string Detail{ get; set; }
 
-        void SetAdminListBinding(BindingSource adminList);
+        void SetPolicyListBinding(BindingSource policyList);
         void Show();
     }
 }
