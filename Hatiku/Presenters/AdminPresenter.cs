@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Hatiku.Models;
+using Hatiku.Models.Repository;
 using Hatiku.Views;
 
 namespace Hatiku.Presenters
@@ -24,6 +25,15 @@ namespace Hatiku.Presenters
 
             this.adminView.AddNewEvent += AddNewAdmin;
             this.adminView.EditEvent += EditAdmin;
+            this.adminView.DeleteEvent += DeleteAdmin;
+            this.adminView.CancelEvent += CancelEvent;
+            this.adminView.SaveEvent += Save;
+            this.adminView.SearchEvent += SearchAdmin;
+        }
+
+        private void AddNewAdmin(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         private void EditAdmin(object sender, EventArgs e)
@@ -31,9 +41,25 @@ namespace Hatiku.Presenters
             throw new NotImplementedException();
         }
 
-        private void AddNewAdmin(object sender, EventArgs e)
+        private void CancelEvent(object sender, EventArgs e)
         {
             throw new NotImplementedException();
         }
+
+        private void DeleteAdmin(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void Save(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void SearchAdmin(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
     }
 }
