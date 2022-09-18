@@ -8,5 +8,8 @@ namespace Hatiku.Models.Repository
 {
     interface IDiseaseDiagnosisHistoryRepository
     {
+        DiseaseDiagnosisHistory Find(DateTime id);
+        bool Add(DiseaseDiagnosisHistory hist);
+        bool Delete(DateTime id);
     }
 }

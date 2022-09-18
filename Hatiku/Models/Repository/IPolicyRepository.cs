@@ -8,5 +8,10 @@ namespace Hatiku.Models.Repository
 {
     interface IPolicyRepository
     {
+        IEnumerable<Policy> FetchAll();
+        Policy Find(int id);
+        bool Add (Policy policy);
+        bool Edit(int id);
+        bool Delete(int id);
     }
 }

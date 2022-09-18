@@ -1,14 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "b4IWc6tilUj4vTTGXO3zaNk5DGEnjRmxtzXybt8+5dwjpvCEm+IK55qrQbO1wSQ9tqlDPo+nd+NRqvVoWdq8sA==",
+  "dgSpecHash": "ySa74iGnVxBN7HJ3mPPTFXraKqAJrHzu9OFbNKVfxlBoY85uLdbtOf8FYx1pQN30aC80M8iyARxS8ZcW8jhD5A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\LENOVO\\source\\repos\\BetNares\\Hatiku\\Hatiku\\Hatiku.csproj",
+  "projectFilePath": "C:\\Users\\LENOVO\\Source\\Repos\\BetNares\\Hatiku\\Hatiku\\Hatiku.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\system.componentmodel\\4.3.0\\system.componentmodel.4.3.0.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
-    "C:\\Users\\LENOVO\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512"
+    "C:\\Users\\LENOVO\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }
