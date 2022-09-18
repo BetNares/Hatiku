@@ -8,5 +8,8 @@ namespace Hatiku.Models.Repository
 {
     interface IRiskDiagnosisResultRepository
     {
+        RiskDiagnosisResult Find(DateTime id);
+        bool Add(RiskDiagnosisResult hist);
+        bool Delete(DateTime id);
     }
 }
