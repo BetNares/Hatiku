@@ -9,5 +9,5 @@ HATIKU
 </ul>
 
 <h2 id="class-diagram">Class Diagram</h2>
-<img src="https://github.com/BetNares/Hatiku/blob/class-diagram/asset/img/Hatiku-Class%20Diagram%20-%20With%20Attribute.drawio.png" alt="Class Diagram">
+<img src="https://raw.githubusercontent.com/BetNares/Hatiku/main/asset/img/Hatiku-Class%20Diagram%20-%20With%20Attribute.drawio.png" alt="Class Diagram">
 
