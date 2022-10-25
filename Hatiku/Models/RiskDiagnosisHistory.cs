@@ -11,7 +11,7 @@ namespace Hatiku.Models
         private DateTime _resultId;
         private int _ruleId;
 
-        public DateTime ResultId { get => _resultId; set => _resulId = value; }
+        public DateTime ResultId { get => _resultId; set => _resultId = value; }
         public int RuleId { get => _ruleId; set => _ruleId = value; }
     }
 }
