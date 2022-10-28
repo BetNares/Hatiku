@@ -28,120 +28,143 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblWelcome = new System.Windows.Forms.Label();
+            this.tbUsername = new System.Windows.Forms.TextBox();
+            this.tbPassword = new System.Windows.Forms.TextBox();
+            this.btnLogIn = new System.Windows.Forms.Button();
+            this.lblHaveAccount = new System.Windows.Forms.Label();
             this.lblCreateAcc = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
+            this.lblClose = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(-1, -2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1064, 604);
-            this.panel1.TabIndex = 0;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel2.Controls.Add(this.lblCreateAcc);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.textBox2);
-            this.panel2.Controls.Add(this.textBox1);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(348, 28);
+            this.panel2.Controls.Add(this.lblHaveAccount);
+            this.panel2.Controls.Add(this.btnLogIn);
+            this.panel2.Controls.Add(this.tbPassword);
+            this.panel2.Controls.Add(this.tbUsername);
+            this.panel2.Controls.Add(this.lblWelcome);
+            this.panel2.Location = new System.Drawing.Point(304, 21);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(345, 504);
+            this.panel2.Size = new System.Drawing.Size(302, 378);
             this.panel2.TabIndex = 0;
             // 
-            // label1
+            // lblWelcome
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(120, 55);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "WELCOME!";
+            this.lblWelcome.AutoSize = true;
+            this.lblWelcome.Location = new System.Drawing.Point(114, 41);
+            this.lblWelcome.Name = "lblWelcome";
+            this.lblWelcome.Size = new System.Drawing.Size(67, 15);
+            this.lblWelcome.TabIndex = 0;
+            this.lblWelcome.Text = "WELCOME!";
             // 
-            // textBox1
+            // tbUsername
             // 
-            this.textBox1.Location = new System.Drawing.Point(55, 102);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.PlaceholderText = "Username...";
-            this.textBox1.Size = new System.Drawing.Size(237, 27);
-            this.textBox1.TabIndex = 1;
+            this.tbUsername.Location = new System.Drawing.Point(48, 76);
+            this.tbUsername.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbUsername.Name = "tbUsername";
+            this.tbUsername.PlaceholderText = "Username...";
+            this.tbUsername.Size = new System.Drawing.Size(208, 23);
+            this.tbUsername.TabIndex = 1;
             // 
-            // textBox2
+            // tbPassword
             // 
-            this.textBox2.Location = new System.Drawing.Point(55, 150);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PlaceholderText = "Password...";
-            this.textBox2.Size = new System.Drawing.Size(237, 27);
-            this.textBox2.TabIndex = 2;
+            this.tbPassword.Location = new System.Drawing.Point(48, 112);
+            this.tbPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbPassword.Name = "tbPassword";
+            this.tbPassword.PlaceholderText = "Password...";
+            this.tbPassword.Size = new System.Drawing.Size(208, 23);
+            this.tbPassword.TabIndex = 2;
             // 
-            // button1
+            // btnLogIn
             // 
-            this.button1.Location = new System.Drawing.Point(55, 223);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(237, 29);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Log In";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnLogIn.Location = new System.Drawing.Point(48, 167);
+            this.btnLogIn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnLogIn.Name = "btnLogIn";
+            this.btnLogIn.Size = new System.Drawing.Size(207, 22);
+            this.btnLogIn.TabIndex = 3;
+            this.btnLogIn.Text = "Log In";
+            this.btnLogIn.UseVisualStyleBackColor = true;
             // 
-            // label2
+            // lblHaveAccount
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(26, 272);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(163, 20);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Don\'t have an account?";
+            this.lblHaveAccount.AutoSize = true;
+            this.lblHaveAccount.Location = new System.Drawing.Point(23, 204);
+            this.lblHaveAccount.Name = "lblHaveAccount";
+            this.lblHaveAccount.Size = new System.Drawing.Size(131, 15);
+            this.lblHaveAccount.TabIndex = 4;
+            this.lblHaveAccount.Text = "Don\'t have an account?";
             // 
             // lblCreateAcc
             // 
             this.lblCreateAcc.AutoSize = true;
-            this.lblCreateAcc.Location = new System.Drawing.Point(195, 272);
+            this.lblCreateAcc.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblCreateAcc.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.lblCreateAcc.Location = new System.Drawing.Point(171, 204);
             this.lblCreateAcc.Name = "lblCreateAcc";
-            this.lblCreateAcc.Size = new System.Drawing.Size(110, 20);
+            this.lblCreateAcc.Size = new System.Drawing.Size(89, 15);
             this.lblCreateAcc.TabIndex = 5;
             this.lblCreateAcc.Text = "Create Account";
             this.lblCreateAcc.Click += new System.EventHandler(this.lblCreateAcc_Click);
             // 
+            // lblClose
+            // 
+            this.lblClose.AutoSize = true;
+            this.lblClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblClose.Location = new System.Drawing.Point(903, 11);
+            this.lblClose.Name = "lblClose";
+            this.lblClose.Size = new System.Drawing.Size(14, 15);
+            this.lblClose.TabIndex = 3;
+            this.lblClose.Text = "X";
+            this.lblClose.Click += new System.EventHandler(this.lblClose_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.panel1.Controls.Add(this.lblClose);
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Location = new System.Drawing.Point(-1, -2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(931, 453);
+            this.panel1.TabIndex = 0;
+            // 
             // LogInForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1060, 602);
+            this.ClientSize = new System.Drawing.Size(928, 452);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "LogInForm";
             this.Text = "LogInForm";
-            this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblCreateAcc;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label lblHaveAccount;
+        private System.Windows.Forms.Button btnLogIn;
+        private System.Windows.Forms.TextBox tbPassword;
+        private System.Windows.Forms.TextBox tbUsername;
+        private System.Windows.Forms.Label lblWelcome;
+        private System.Windows.Forms.Label lblClose;
+        private System.Windows.Forms.Panel panel1;
     }
 }

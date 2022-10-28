@@ -17,12 +17,23 @@ namespace Hatiku.Forms
         public LogInForm()
         {
             InitializeComponent();
-            _signInForm = new SignInForm();
         }
 
         private void lblCreateAcc_Click(object sender, EventArgs e)
         {
+            _signInForm = new SignInForm();
+
+            _signInForm.Location = this.Location;
+            _signInForm.StartPosition = FormStartPosition.Manual;
+            _signInForm.FormClosing += delegate { this.Show(); };
             _signInForm.Show();
+            this.Hide();
+
+        }
+
+        private void lblClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
