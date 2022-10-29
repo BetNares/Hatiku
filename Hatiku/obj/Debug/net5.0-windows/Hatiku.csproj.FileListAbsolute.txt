@@ -1,0 +1,29 @@
+C:\Users\LENOVO\source\repos\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.csprojAssemblyReference.cache
+C:\Users\LENOVO\source\repos\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LENOVO\source\repos\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.AssemblyInfoInputs.cache
+C:\Users\LENOVO\source\repos\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.AssemblyInfo.cs
+C:\Users\LENOVO\source\repos\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.csproj.CoreCompileInputs.cache
+D:\Devon\Website stuff\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.csproj.AssemblyReference.cache
+D:\Devon\Website stuff\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.Forms.AdminView.resources
+D:\Devon\Website stuff\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.Forms.HomeForm.resources
+D:\Devon\Website stuff\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.Forms.InputDataForm.resources
+D:\Devon\Website stuff\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.Forms.LoadingForm.resources
+D:\Devon\Website stuff\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.Forms.LogInForm.resources
+D:\Devon\Website stuff\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.Forms.ProfileForm.resources
+D:\Devon\Website stuff\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.Forms.SignInForm.resources
+D:\Devon\Website stuff\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.csproj.GenerateResource.cache
+D:\Devon\Website stuff\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.GeneratedMSBuildEditorConfig.editorconfig
+D:\Devon\Website stuff\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.AssemblyInfoInputs.cache
+D:\Devon\Website stuff\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.AssemblyInfo.cs
+D:\Devon\Website stuff\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.csproj.CoreCompileInputs.cache
+D:\Devon\Website stuff\Hatiku\Hatiku\bin\Debug\net5.0-windows\Hatiku.exe
+D:\Devon\Website stuff\Hatiku\Hatiku\bin\Debug\net5.0-windows\Hatiku.deps.json
+D:\Devon\Website stuff\Hatiku\Hatiku\bin\Debug\net5.0-windows\Hatiku.runtimeconfig.json
+D:\Devon\Website stuff\Hatiku\Hatiku\bin\Debug\net5.0-windows\Hatiku.runtimeconfig.dev.json
+D:\Devon\Website stuff\Hatiku\Hatiku\bin\Debug\net5.0-windows\Hatiku.dll
+D:\Devon\Website stuff\Hatiku\Hatiku\bin\Debug\net5.0-windows\Hatiku.pdb
+D:\Devon\Website stuff\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.dll
+D:\Devon\Website stuff\Hatiku\Hatiku\obj\Debug\net5.0-windows\refint\Hatiku.dll
+D:\Devon\Website stuff\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.pdb
+D:\Devon\Website stuff\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.genruntimeconfig.cache
+D:\Devon\Website stuff\Hatiku\Hatiku\obj\Debug\net5.0-windows\ref\Hatiku.dll
