@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Hatiku.Views.EventView;
 
 namespace Hatiku.Views
 {
-    public interface IPolicyView: IView
+    public interface IPolicyView: IEventView, IUpdateEventView
     {
         int PolicyId { get; set; }
         string Name { get; set; }

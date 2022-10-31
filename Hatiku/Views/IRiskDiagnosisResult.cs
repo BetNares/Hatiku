@@ -9,14 +9,12 @@ using Hatiku.Views.EventView;
 
 namespace Hatiku.Views
 {
-    public interface IAdminView: IEventView, IUpdateEventView
+    public interface IRiskDiagnosisResult: IEventView, IUpdateEventView
     {
-        int UserId { get; set; }
-        string Username { get; set; }
-        string Password { get; set; }
+        DateTime ResultId { get; set; }
+        float RiskResult { get; set; }
 
-
-        void SetAdminListBinding(BindingSource adminList);
+        void SetRiskResultBindingSource(BindingSource riskResultBindingSource);
         void Show();
     }
 }
