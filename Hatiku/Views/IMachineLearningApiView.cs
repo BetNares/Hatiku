@@ -9,10 +9,10 @@ namespace Hatiku.Views
 {
     public interface IMlApiView
     {
-        public string MlApiId { get; set; }
-        public string MlApiEndpoint { get; set; }
-        public string MlApiKey { get; set; }
-        public bool IsConnect { get; set; }
+        string MlApiId { get; set; }
+        string MlApiEndpoint { get; set; }
+        string MlApiKey { get; set; }
+        bool IsConnect { get; set; }
 
         Task InvokeRequestResponseService(string scoreRequestContent);
         void SetAdminListBinding(BindingSource adminList);
