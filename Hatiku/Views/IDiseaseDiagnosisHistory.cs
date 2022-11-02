@@ -9,7 +9,7 @@ using Hatiku.Views.EventView;
 
 namespace Hatiku.Views
 {
-    public interface IDiseaseDiagnosisHistory: IEventView
+    public interface IDiseaseDiagnosisHistory: IEventView, IShowView
     {
         int Age { get; set;  }
         int Height { get; set; }
@@ -25,6 +25,5 @@ namespace Hatiku.Views
         bool DiseaseResult { get; set; }
 
         void SetDiseaseHistoryBindingSource(BindingSource diseaseHistoryBindingSource);
-        void Show();
     }
  }

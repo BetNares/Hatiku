@@ -9,7 +9,7 @@ using Hatiku.Views.EventView;
 
 namespace Hatiku.Views
 {
-    public interface IAdminView: IEventView, IUpdateEventView
+    public interface IAdminView: IEventView, IUpdateEventView, IShowView
     {
         int UserId { get; set; }
         string Username { get; set; }
@@ -17,6 +17,5 @@ namespace Hatiku.Views
 
 
         void SetAdminListBinding(BindingSource adminList);
-        void Show();
     }
 }

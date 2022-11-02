@@ -8,12 +8,11 @@ using Hatiku.Views.EventView;
 
 namespace Hatiku.Views
 {
-    public interface IRiskDiagnosisHistory: IEventView, IUpdateEventView
+    public interface IRiskDiagnosisHistory: IEventView, IUpdateEventView, IShowView
     {
         DateTime ResultId { get; set; }
         int RuleId { get; set; }
 
         void SetRiskHistoryBindingSource(BindingSource riskHistoryBindingSource);
-        void Show();
     }
 }

@@ -8,13 +8,12 @@ using Hatiku.Views.EventView;
 
 namespace Hatiku.Views
 {
-    public interface IPolicyView: IEventView, IUpdateEventView
+    public interface IPolicyView: IEventView, IUpdateEventView, IShowView
     {
         int PolicyId { get; set; }
         string Name { get; set; }
         string Detail{ get; set; }
 
         void SetPolicyListBinding(BindingSource policyList);
-        void Show();
     }
 }
