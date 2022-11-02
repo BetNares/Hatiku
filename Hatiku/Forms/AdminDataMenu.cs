@@ -11,13 +11,13 @@ using Hatiku.Views;
 
 namespace Hatiku.Forms
 {
-    public partial class AdminView : Form, IAdminView
+    public partial class AdminDataMenu: Form, IAdminView
     {
         private string message;
         private bool isSuccess;
         private bool isEdit;
 
-        public AdminView()
+        public AdminDataMenu()
         {
             InitializeComponent();
         }
@@ -28,7 +28,7 @@ namespace Hatiku.Forms
 
         public string SearchValue { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public bool IsEdit { get { return isEdit; } set { isEdit = value; } }
-        public bool IsSuccess { get { return isSuccess; } set { isSuccess= value; } }
+        public bool IsSuccess { get { return isSuccess; } set { isSuccess = value; } }
         public string Message { get { return message; } set { message = value; } }
 
         public event EventHandler SearchEvent;
@@ -38,9 +38,14 @@ namespace Hatiku.Forms
         public event EventHandler SaveEvent;
         public event EventHandler CancelEvent;
 
-        public void SetAdminListBinding(BindingSource adminList)
+        public void Show()
         {
             throw new NotImplementedException();
+        }
+
+        public void SetAdminListBinding(BindingSource adminList)
+        {
+
         }
     }
 }
