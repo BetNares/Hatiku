@@ -218,7 +218,7 @@
   <data name="btnAdmin.Image" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        6QAAAOkBVJIUSwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAF7SURBVFhH1dU9
+        5wAAAOcB8BtYtQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAF7SURBVFhH1dU9
         SgRBEIbhxkBBDBQjQWMRDA0NFGMTf8DAG3gAA2/gBTbTwEwFE0PBS+gx/AUjBX2rsaUZv96ZnloEP3hg
         6anq2RmamlDIHm7xiDfcYAdd07t/DKf4LDiD1ZTi7Q+HUI25I5Ti6p/AM1RT7gmTaMbbH9agGpQVNOPt
         D5tQxYrVNuPtD0tQxcoymvH2x9xBNeTuUYq3P2zgHarRfMBqSvH2x2zBTmqz2da20RZvf8w0DjDAyffv
@@ -268,7 +268,7 @@
     <value>Bottom</value>
   </data>
   <data name="buttonPanel.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>0, 62</value>
+    <value>0, 162</value>
   </data>
   <data name="buttonPanel.Size" type="System.Drawing.Size, System.Drawing.Primitives">
     <value>248, 691</value>
@@ -319,7 +319,7 @@
     <value>0, 0</value>
   </data>
   <data name="pnlDataMenu.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>248, 753</value>
+    <value>248, 853</value>
   </data>
   <data name="pnlDataMenu.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>0</value>
@@ -373,7 +373,7 @@
     <value>248, 0</value>
   </data>
   <data name="titlePanel.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>1014, 64</value>
+    <value>1174, 64</value>
   </data>
   <data name="titlePanel.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>1</value>
@@ -397,7 +397,7 @@
     <value>8, 20</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>1262, 753</value>
+    <value>1422, 853</value>
   </data>
   <data name="$this.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>No</value>

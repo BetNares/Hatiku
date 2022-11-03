@@ -30,95 +30,108 @@ namespace Hatiku.Forms
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblPassword = new System.Windows.Forms.Label();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtUsername = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblUsername = new System.Windows.Forms.Label();
+            this.lblId = new System.Windows.Forms.Label();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.lblSearch = new System.Windows.Forms.Label();
+            this.txtSearch = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtSearch = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnSave = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.dataGridViewAdmin = new System.Windows.Forms.DataGridView();
+            this.txtId = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAdmin)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.txtId);
+            this.panel1.Controls.Add(this.lblPassword);
             this.panel1.Controls.Add(this.txtPassword);
             this.panel1.Controls.Add(this.txtUsername);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.lblUsername);
+            this.panel1.Controls.Add(this.lblId);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1014, 109);
+            this.panel1.Size = new System.Drawing.Size(1174, 144);
             this.panel1.TabIndex = 7;
+            // 
+            // lblPassword
+            // 
+            this.lblPassword.AutoSize = true;
+            this.lblPassword.Location = new System.Drawing.Point(64, 97);
+            this.lblPassword.Name = "lblPassword";
+            this.lblPassword.Size = new System.Drawing.Size(85, 23);
+            this.lblPassword.TabIndex = 12;
+            this.lblPassword.Text = "Password";
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(198, 59);
+            this.txtPassword.Location = new System.Drawing.Point(173, 94);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(215, 30);
+            this.txtPassword.Size = new System.Drawing.Size(336, 29);
             this.txtPassword.TabIndex = 11;
             // 
             // txtUsername
             // 
-            this.txtUsername.Location = new System.Drawing.Point(198, 18);
+            this.txtUsername.Location = new System.Drawing.Point(173, 56);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(215, 30);
+            this.txtUsername.Size = new System.Drawing.Size(336, 29);
             this.txtUsername.TabIndex = 10;
             // 
-            // label3
+            // lblUsername
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(64, 62);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(82, 23);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Password";
+            this.lblUsername.AutoSize = true;
+            this.lblUsername.Location = new System.Drawing.Point(64, 59);
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.Size = new System.Drawing.Size(89, 23);
+            this.lblUsername.TabIndex = 8;
+            this.lblUsername.Text = "Username";
             // 
-            // label2
+            // lblId
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(64, 21);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(87, 23);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Username";
+            this.lblId.AutoSize = true;
+            this.lblId.Location = new System.Drawing.Point(64, 21);
+            this.lblId.Name = "lblId";
+            this.lblId.Size = new System.Drawing.Size(66, 23);
+            this.lblId.TabIndex = 7;
+            this.lblId.Text = "User Id";
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(64, 22);
+            this.btnAdd.Location = new System.Drawing.Point(64, 17);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(94, 33);
+            this.btnAdd.Size = new System.Drawing.Size(94, 30);
             this.btnAdd.TabIndex = 12;
             this.btnAdd.Text = "Tambah";
             this.btnAdd.UseVisualStyleBackColor = true;
             // 
             // btnEdit
             // 
-            this.btnEdit.Location = new System.Drawing.Point(173, 22);
+            this.btnEdit.Location = new System.Drawing.Point(173, 17);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(94, 33);
+            this.btnEdit.Size = new System.Drawing.Size(94, 30);
             this.btnEdit.TabIndex = 13;
             this.btnEdit.Text = "Ubah";
             this.btnEdit.UseVisualStyleBackColor = true;
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(282, 22);
+            this.btnDelete.Location = new System.Drawing.Point(282, 17);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(94, 33);
+            this.btnDelete.Size = new System.Drawing.Size(94, 30);
             this.btnDelete.TabIndex = 14;
             this.btnDelete.Text = "Hapus";
             this.btnDelete.UseVisualStyleBackColor = true;
@@ -126,30 +139,46 @@ namespace Hatiku.Forms
             // panel2
             // 
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 183);
+            this.panel2.Location = new System.Drawing.Point(0, 208);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(64, 439);
+            this.panel2.Size = new System.Drawing.Size(64, 517);
             this.panel2.TabIndex = 8;
             // 
             // panel3
             // 
             this.panel3.Controls.Add(this.btnDelete);
-            this.panel3.Controls.Add(this.label1);
+            this.panel3.Controls.Add(this.lblSearch);
             this.panel3.Controls.Add(this.btnEdit);
             this.panel3.Controls.Add(this.txtSearch);
             this.panel3.Controls.Add(this.btnAdd);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 109);
+            this.panel3.Location = new System.Drawing.Point(0, 144);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1014, 74);
+            this.panel3.Size = new System.Drawing.Size(1174, 64);
             this.panel3.TabIndex = 9;
+            // 
+            // lblSearch
+            // 
+            this.lblSearch.AutoSize = true;
+            this.lblSearch.Location = new System.Drawing.Point(565, 22);
+            this.lblSearch.Name = "lblSearch";
+            this.lblSearch.Size = new System.Drawing.Size(42, 23);
+            this.lblSearch.TabIndex = 18;
+            this.lblSearch.Text = "Cari";
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.Location = new System.Drawing.Point(626, 18);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(484, 29);
+            this.txtSearch.TabIndex = 17;
             // 
             // panel4
             // 
             this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel4.Location = new System.Drawing.Point(950, 183);
+            this.panel4.Location = new System.Drawing.Point(1110, 208);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(64, 439);
+            this.panel4.Size = new System.Drawing.Size(64, 517);
             this.panel4.TabIndex = 10;
             // 
             // panel5
@@ -157,68 +186,59 @@ namespace Hatiku.Forms
             this.panel5.Controls.Add(this.btnCancel);
             this.panel5.Controls.Add(this.btnSave);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel5.Location = new System.Drawing.Point(0, 622);
+            this.panel5.Location = new System.Drawing.Point(0, 725);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1014, 67);
+            this.panel5.Size = new System.Drawing.Size(1174, 64);
             this.panel5.TabIndex = 11;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(565, 27);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(40, 23);
-            this.label1.TabIndex = 18;
-            this.label1.Text = "Cari";
-            // 
-            // txtSearch
-            // 
-            this.txtSearch.Location = new System.Drawing.Point(626, 23);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(324, 30);
-            this.txtSearch.TabIndex = 17;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(64, 183);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(886, 439);
-            this.dataGridView1.TabIndex = 16;
-            // 
-            // btnSave
-            // 
-            this.btnSave.Location = new System.Drawing.Point(747, 15);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(94, 33);
-            this.btnSave.TabIndex = 19;
-            this.btnSave.Text = "Simpan";
-            this.btnSave.UseVisualStyleBackColor = true;
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(856, 15);
+            this.btnCancel.Location = new System.Drawing.Point(1016, 16);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(94, 33);
+            this.btnCancel.Size = new System.Drawing.Size(94, 30);
             this.btnCancel.TabIndex = 20;
             this.btnCancel.Text = "Batal";
             this.btnCancel.UseVisualStyleBackColor = true;
             // 
+            // btnSave
+            // 
+            this.btnSave.Location = new System.Drawing.Point(912, 16);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(94, 30);
+            this.btnSave.TabIndex = 19;
+            this.btnSave.Text = "Simpan";
+            this.btnSave.UseVisualStyleBackColor = true;
+            // 
+            // dataGridViewAdmin
+            // 
+            this.dataGridViewAdmin.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewAdmin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewAdmin.Location = new System.Drawing.Point(64, 208);
+            this.dataGridViewAdmin.Name = "dataGridViewAdmin";
+            this.dataGridViewAdmin.RowHeadersWidth = 51;
+            this.dataGridViewAdmin.RowTemplate.Height = 29;
+            this.dataGridViewAdmin.Size = new System.Drawing.Size(1046, 517);
+            this.dataGridViewAdmin.TabIndex = 16;
+            // 
+            // txtId
+            // 
+            this.txtId.Location = new System.Drawing.Point(173, 18);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(94, 29);
+            this.txtId.TabIndex = 13;
+            // 
             // AdminDataMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1014, 689);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(1174, 789);
+            this.Controls.Add(this.dataGridViewAdmin);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
-            this.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "AdminDataMenu";
@@ -228,7 +248,7 @@ namespace Hatiku.Forms
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAdmin)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -240,16 +260,18 @@ namespace Hatiku.Forms
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.TextBox txtUsername;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblUsername;
+        private System.Windows.Forms.Label lblId;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblSearch;
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridViewAdmin;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Label lblPassword;
+        private System.Windows.Forms.TextBox txtId;
     }
 }
