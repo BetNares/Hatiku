@@ -1,9 +1,14 @@
-using Hatiku.Forms;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Hatiku.Forms;
+using Hatiku.Views;
+using Hatiku.Models.IRepository;
+using Hatiku.Presenters;
+using Hatiku.Repository;
+using System.Configuration;
 
 namespace Hatiku
 {
@@ -19,7 +24,13 @@ namespace Hatiku
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new HomeForm());
+
+            string connectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
+            IAdminRepository adminRepository = new AdminRepository(connectionString);
+            IAdminView adminView = new AdminDataMenu();
+            new AdminPresenter(adminRepository, adminView);
+
+            Application.Run((Form)adminView);
         }
     }
 }

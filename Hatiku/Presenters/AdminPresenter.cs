@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Hatiku.Models;
-using Hatiku.Models.Repository;
+using Hatiku.Models.IRepository;
 using Hatiku.Views;
 
 namespace Hatiku.Presenters
@@ -38,7 +38,7 @@ namespace Hatiku.Presenters
             LoadAllAdminData();
 
             // Load data
-            this.adminView.Show();
+            //this.adminView.Show();
         }
 
         private void LoadAllAdminData()
