@@ -38,7 +38,7 @@ namespace Hatiku.Forms
             this.btnAdmin = new System.Windows.Forms.Button();
             this.dataHomePanel = new System.Windows.Forms.Panel();
             this.titlePanel = new System.Windows.Forms.Panel();
-            this.title = new System.Windows.Forms.Label();
+            this.lblTitle = new System.Windows.Forms.Label();
             this.pnlDataMenu.SuspendLayout();
             this.buttonPanel.SuspendLayout();
             this.titlePanel.SuspendLayout();
@@ -93,6 +93,7 @@ namespace Hatiku.Forms
             this.btnAdmin.BackColor = System.Drawing.Color.LightSkyBlue;
             resources.ApplyResources(this.btnAdmin, "btnAdmin");
             this.btnAdmin.FlatAppearance.BorderSize = 0;
+            this.btnAdmin.Image = global::Hatiku.Properties.Resources.users_alt_32px;
             this.btnAdmin.Name = "btnAdmin";
             this.btnAdmin.UseVisualStyleBackColor = false;
             // 
@@ -104,14 +105,14 @@ namespace Hatiku.Forms
             // titlePanel
             // 
             this.titlePanel.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.titlePanel.Controls.Add(this.title);
+            this.titlePanel.Controls.Add(this.lblTitle);
             resources.ApplyResources(this.titlePanel, "titlePanel");
             this.titlePanel.Name = "titlePanel";
             // 
-            // title
+            // lblTitle
             // 
-            resources.ApplyResources(this.title, "title");
-            this.title.Name = "title";
+            resources.ApplyResources(this.lblTitle, "lblTitle");
+            this.lblTitle.Name = "lblTitle";
             // 
             // AdminMainMenu
             // 
@@ -119,6 +120,7 @@ namespace Hatiku.Forms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.titlePanel);
             this.Controls.Add(this.pnlDataMenu);
+            this.IsMdiContainer = true;
             this.Name = "AdminMainMenu";
             this.pnlDataMenu.ResumeLayout(false);
             this.buttonPanel.ResumeLayout(false);
@@ -135,7 +137,7 @@ namespace Hatiku.Forms
         private System.Windows.Forms.Button btnAdmin;
         private System.Windows.Forms.Panel dataHomePanel;
         private System.Windows.Forms.Panel titlePanel;
-        private System.Windows.Forms.Label title;
+        private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button btnExpertSystem;
         private System.Windows.Forms.Button btnPolicy;

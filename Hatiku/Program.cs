@@ -26,11 +26,10 @@ namespace Hatiku
             Application.SetCompatibleTextRenderingDefault(false);
 
             string connectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
-            IAdminRepository adminRepository = new AdminRepository(connectionString);
-            IAdminView adminView = new AdminDataMenu();
-            new AdminPresenter(adminRepository, adminView);
+            IAdminMainMenuView adminMenuView = new AdminMainMenu();
+            new AdminMainMenuPresenter(adminMenuView, connectionString);
 
-            Application.Run((Form)adminView);
+            Application.Run((Form)adminMenuView);
         }
     }
 }

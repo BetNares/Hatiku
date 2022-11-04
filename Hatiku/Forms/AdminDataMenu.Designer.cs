@@ -30,6 +30,7 @@ namespace Hatiku.Forms
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtId = new System.Windows.Forms.TextBox();
             this.lblPassword = new System.Windows.Forms.Label();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtUsername = new System.Windows.Forms.TextBox();
@@ -47,7 +48,6 @@ namespace Hatiku.Forms
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.dataGridViewAdmin = new System.Windows.Forms.DataGridView();
-            this.txtId = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -67,6 +67,13 @@ namespace Hatiku.Forms
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1174, 144);
             this.panel1.TabIndex = 7;
+            // 
+            // txtId
+            // 
+            this.txtId.Location = new System.Drawing.Point(173, 18);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(94, 29);
+            this.txtId.TabIndex = 13;
             // 
             // lblPassword
             // 
@@ -111,6 +118,7 @@ namespace Hatiku.Forms
             // 
             // btnAdd
             // 
+            this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAdd.Location = new System.Drawing.Point(64, 17);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(94, 30);
@@ -120,6 +128,7 @@ namespace Hatiku.Forms
             // 
             // btnEdit
             // 
+            this.btnEdit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEdit.Location = new System.Drawing.Point(173, 17);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(94, 30);
@@ -129,6 +138,7 @@ namespace Hatiku.Forms
             // 
             // btnDelete
             // 
+            this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDelete.Location = new System.Drawing.Point(282, 17);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(94, 30);
@@ -168,6 +178,9 @@ namespace Hatiku.Forms
             // 
             // txtSearch
             // 
+            this.txtSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSearch.Location = new System.Drawing.Point(626, 18);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(484, 29);
@@ -193,6 +206,8 @@ namespace Hatiku.Forms
             // 
             // btnCancel
             // 
+            this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCancel.Location = new System.Drawing.Point(1016, 16);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(94, 30);
@@ -202,6 +217,8 @@ namespace Hatiku.Forms
             // 
             // btnSave
             // 
+            this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSave.Location = new System.Drawing.Point(912, 16);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(94, 30);
@@ -219,13 +236,6 @@ namespace Hatiku.Forms
             this.dataGridViewAdmin.RowTemplate.Height = 29;
             this.dataGridViewAdmin.Size = new System.Drawing.Size(1046, 517);
             this.dataGridViewAdmin.TabIndex = 16;
-            // 
-            // txtId
-            // 
-            this.txtId.Location = new System.Drawing.Point(173, 18);
-            this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(94, 29);
-            this.txtId.TabIndex = 13;
             // 
             // AdminDataMenu
             // 

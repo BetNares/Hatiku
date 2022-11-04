@@ -38,7 +38,7 @@ namespace Hatiku.Presenters
             LoadAllAdminData();
 
             // Load data
-            //this.adminView.Show();
+            ((Form)(this.adminView)).Show();
         }
 
         private void LoadAllAdminData()

@@ -111,43 +111,42 @@ namespace Hatiku.Repository
 
         public IEnumerable<Admin> FindByValue(string value)
         {
-            throw new NotImplementedException();
-            //int userId = int.TryParse(value, out _) ? Convert.ToInt32(value) : 00000;
+            int userId = int.TryParse(value, out _) ? Convert.ToInt32(value) : 00000;
 
-            //List<Admin> adminList = new List<Admin>();
-            //_conn = new NpgsqlConnection(connectionString);
+            List<Admin> adminList = new List<Admin>();
+            _conn = new NpgsqlConnection(connectionString);
 
-            //_queryString = @"select * from admin 
-            //                 where userId=@id or
-            //                 username like @username+`%`
-            //                 order by userId desc";
-            //MessageBox.Show(_queryString);
-            //_cmd = new NpgsqlCommand(_queryString, _conn);
-            //_cmd.Parameters.Add("@id", NpgsqlDbType.Integer).Value = userId;
-            //_cmd.Parameters.Add("@username", NpgsqlDbType.Varchar).Value = value;
+            _queryString = @"select * from admin 
+                             where userId=@id or
+                             username like @username+'%'
+                             order by userId desc";
+            MessageBox.Show(_queryString);
+            _cmd = new NpgsqlCommand(_queryString, _conn);
+            _cmd.Parameters.Add("@id", NpgsqlDbType.Integer).Value = userId;
+            _cmd.Parameters.Add("@username", NpgsqlDbType.Varchar).Value = value;
 
-            //try
-            //{
-            //    _conn.Open();
-            //    using (var reader = _cmd.ExecuteReader())
-            //    {
-            //        while (reader.Read())
-            //        {
-            //            var admin = new Admin();
-            //            admin.Id = (int)reader[0];
-            //            admin.Username = reader[1].ToString();
-            //            admin.Password = reader[2].ToString();
-            //            adminList.Add(admin);
-            //        }
-            //    }
-            //    _conn.Close();
-            //    return adminList;
-            //}
-            //catch (Exception e)
-            //{
-            //    MessageBox.Show("Error: " + e, "Error!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //    return null;
-            //}
+            try
+            {
+                _conn.Open();
+                using (var reader = _cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        var admin = new Admin();
+                        admin.Id = (int)reader[0];
+                        admin.Username = reader[1].ToString();
+                        admin.Password = reader[2].ToString();
+                        adminList.Add(admin);
+                    }
+                }
+                _conn.Close();
+                return adminList;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Error: " + e, "Error!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return null;
+            }
         }
     }
 }

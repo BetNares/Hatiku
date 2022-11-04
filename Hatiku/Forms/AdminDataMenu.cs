@@ -18,16 +18,10 @@ namespace Hatiku.Forms
         private bool _isSuccess;
         private bool _isEdit;
 
-            public AdminDataMenu()
+        public AdminDataMenu()
         {
             InitializeComponent();
             AssociateAndRaiseEvents();
-        }
-
-        private void AssociateAndRaiseEvents()
-        {
-            txtSearch.TextChanged += delegate { SearchEvent?.Invoke(this, EventArgs.Empty); };
-
         }
 
         public int UserId 
@@ -82,6 +76,30 @@ namespace Hatiku.Forms
         public event EventHandler DeleteEvent;
         public event EventHandler SaveEvent;
         public event EventHandler CancelEvent;
+
+        private static AdminDataMenu _adminDataMenuForm;
+        public static AdminDataMenu GetMenu(Form parentContainer)
+        {
+            if (_adminDataMenuForm == null || _adminDataMenuForm.IsDisposed)
+            {
+                _adminDataMenuForm = new AdminDataMenu();
+                _adminDataMenuForm.MdiParent = parentContainer;
+                _adminDataMenuForm.Dock = DockStyle.Fill;
+            }
+            else
+            {
+                _adminDataMenuForm.WindowState = _adminDataMenuForm.WindowState == FormWindowState.Minimized ?
+                                                    FormWindowState.Normal : _adminDataMenuForm.WindowState;
+                _adminDataMenuForm.BringToFront();
+            }
+            return _adminDataMenuForm;
+        }
+
+        private void AssociateAndRaiseEvents()
+        {
+            txtSearch.TextChanged += delegate { SearchEvent?.Invoke(this, EventArgs.Empty); };
+
+        }
 
         public void SetAdminListBinding(BindingSource adminList)
         {
