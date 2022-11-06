@@ -17,6 +17,5 @@ namespace Hatiku.Views
 
 
         void SetAdminListBinding(BindingSource adminList);
-        void Show();
     }
 }

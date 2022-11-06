@@ -27,3 +27,28 @@ D:\Devon\Website stuff\Hatiku\Hatiku\obj\Debug\net5.0-windows\refint\Hatiku.dll
 D:\Devon\Website stuff\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.pdb
 D:\Devon\Website stuff\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.genruntimeconfig.cache
 D:\Devon\Website stuff\Hatiku\Hatiku\obj\Debug\net5.0-windows\ref\Hatiku.dll
+C:\Users\LENOVO\source\repos\Hatiku\Hatiku\bin\Debug\net5.0-windows\Hatiku.exe
+C:\Users\LENOVO\source\repos\Hatiku\Hatiku\bin\Debug\net5.0-windows\Hatiku.dll.config
+C:\Users\LENOVO\source\repos\Hatiku\Hatiku\bin\Debug\net5.0-windows\Hatiku.deps.json
+C:\Users\LENOVO\source\repos\Hatiku\Hatiku\bin\Debug\net5.0-windows\Hatiku.runtimeconfig.json
+C:\Users\LENOVO\source\repos\Hatiku\Hatiku\bin\Debug\net5.0-windows\Hatiku.runtimeconfig.dev.json
+C:\Users\LENOVO\source\repos\Hatiku\Hatiku\bin\Debug\net5.0-windows\Hatiku.dll
+C:\Users\LENOVO\source\repos\Hatiku\Hatiku\bin\Debug\net5.0-windows\ref\Hatiku.dll
+C:\Users\LENOVO\source\repos\Hatiku\Hatiku\bin\Debug\net5.0-windows\Hatiku.pdb
+C:\Users\LENOVO\source\repos\Hatiku\Hatiku\bin\Debug\net5.0-windows\Npgsql.dll
+C:\Users\LENOVO\source\repos\Hatiku\Hatiku\bin\Debug\net5.0-windows\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\LENOVO\source\repos\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.Forms.AdminDataMenu.resources
+C:\Users\LENOVO\source\repos\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.Forms.AdminMainMenu.resources
+C:\Users\LENOVO\source\repos\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.Forms.HomeForm.resources
+C:\Users\LENOVO\source\repos\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.Forms.InputDataForm.resources
+C:\Users\LENOVO\source\repos\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.Forms.LoadingForm.resources
+C:\Users\LENOVO\source\repos\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.Forms.LogInForm.resources
+C:\Users\LENOVO\source\repos\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.Forms.ProfileForm.resources
+C:\Users\LENOVO\source\repos\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.Forms.SignInForm.resources
+C:\Users\LENOVO\source\repos\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.Properties.Resources.resources
+C:\Users\LENOVO\source\repos\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.csproj.GenerateResource.cache
+C:\Users\LENOVO\source\repos\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.csproj.CopyComplete
+C:\Users\LENOVO\source\repos\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.dll
+C:\Users\LENOVO\source\repos\Hatiku\Hatiku\obj\Debug\net5.0-windows\ref\Hatiku.dll
+C:\Users\LENOVO\source\repos\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.pdb
+C:\Users\LENOVO\source\repos\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.genruntimeconfig.cache

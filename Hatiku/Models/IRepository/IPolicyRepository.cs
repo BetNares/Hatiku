@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Hatiku.Models.Repository
+namespace Hatiku.Models.IRepository
 {
-    interface IRuleRepository
+    interface IPolicyRepository
     {
-        IEnumerable<Rule> FetchAll();
-        Rule Find(int id);
-        bool Add(Rule rule);
+        IEnumerable<Policy> FetchAll();
+        Policy Find(int id);
+        bool Add (Policy policy);
         bool Edit(int id);
         bool Delete(int id);
     }

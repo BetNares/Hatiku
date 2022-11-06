@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Hatiku.Models;
-using Hatiku.Models.Repository;
+using Hatiku.Models.IRepository;
 using Hatiku.Views;
 
 namespace Hatiku.Presenters
@@ -23,12 +23,28 @@ namespace Hatiku.Presenters
             this.adminView = adminView;
             this.adminBindingSource = new BindingSource();
 
+            // Subscribe event
             this.adminView.AddNewEvent += AddNewAdmin;
             this.adminView.EditEvent += EditAdmin;
             this.adminView.DeleteEvent += DeleteAdmin;
             this.adminView.CancelEvent += CancelEvent;
             this.adminView.SaveEvent += Save;
             this.adminView.SearchEvent += SearchAdmin;
+
+            // Set binding source
+            this.adminView.SetAdminListBinding(adminBindingSource);
+
+            // Get Admin Data
+            LoadAllAdminData();
+
+            // Load data
+            ((Form)(this.adminView)).Show();
+        }
+
+        private void LoadAllAdminData()
+        {
+            admins = this.adminRepo.FetchAll();
+            adminBindingSource.DataSource = admins;
         }
 
         private void AddNewAdmin(object sender, EventArgs e)
@@ -58,8 +74,12 @@ namespace Hatiku.Presenters
 
         private void SearchAdmin(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
-        }
+            bool isSearchValueEmpty = string.IsNullOrWhiteSpace(this.adminView.SearchValue);
 
+            admins = isSearchValueEmpty ? this.adminRepo.FetchAll() :
+                this.adminRepo.FindByValue(this.adminView.SearchValue);
+
+            adminBindingSource.DataSource = admins;
+        }
     }
 }

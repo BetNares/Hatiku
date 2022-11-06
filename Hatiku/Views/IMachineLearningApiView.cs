@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Hatiku.Views.EventView;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,7 +8,7 @@ using System.Windows.Forms;
 
 namespace Hatiku.Views
 {
-    public interface IMlApiView
+    public interface IMlApiView: IEventView, IShowView
     {
         string MlApiId { get; set; }
         string MlApiEndpoint { get; set; }
@@ -16,6 +17,5 @@ namespace Hatiku.Views
 
         Task InvokeRequestResponseService(string scoreRequestContent);
         void SetAdminListBinding(BindingSource adminList);
-        void Show();
     }
 }
