@@ -43,33 +43,83 @@ namespace Hatiku.Presenters
 
         private void LoadAllAdminData()
         {
-            admins = this.adminRepo.FetchAll();
+            admins = adminRepo.FetchAll();
             adminBindingSource.DataSource = admins;
+        }
+
+        private void Reset()
+        {
+            adminView.UserId = 00000;
+            adminView.Username = "";
+            adminView.Password = "";
         }
 
         private void AddNewAdmin(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            adminView.IsEdit = false;
         }
 
         private void EditAdmin(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            Admin adminToEdit = (Admin)adminBindingSource.Current;
+
+            adminView.UserId = adminToEdit.Id;
+            adminView.Username = adminToEdit.Username;
+            adminView.Password = adminToEdit.Password;
+            
+            adminView.IsEdit = true;
         }
 
         private void CancelEvent(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            Reset();
         }
 
         private void DeleteAdmin(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var adminToDelete = (Admin)adminBindingSource.Current;
+                adminRepo.Delete(adminToDelete.Id);
+                adminView.IsSuccess = true;
+                adminView.Message = "Admin deleted successfully";
+                LoadAllAdminData();
+            }
+            catch
+            {
+                adminView.IsSuccess = false;
+                adminView.Message = $"An error occured";
+            }
         }
 
         private void Save(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            var admin = new Admin();
+            admin.Id = adminView.UserId;
+            admin.Username = adminView.Username;
+            admin.Password = adminView.Password;
+
+            try
+            {
+                ModelValidation.Validate(admin);
+                if (!adminView.IsEdit)
+                {
+                    adminRepo.Add(admin);
+                    adminView.Message = "Admin added successfully";
+                } 
+                else
+                {
+                    adminRepo.Edit(admin);
+                    adminView.Message = "Admin edited successfully";
+                }
+                adminView.IsSuccess = true;
+                LoadAllAdminData();
+            }
+            catch (Exception ex)
+            {
+                adminView.IsSuccess = false;
+                adminView.Message = ex.Message;
+            }
         }
 
         private void SearchAdmin(object sender, EventArgs e)
@@ -78,7 +128,7 @@ namespace Hatiku.Presenters
 
             admins = isSearchValueEmpty ? this.adminRepo.FetchAll() :
                 this.adminRepo.FindByValue(this.adminView.SearchValue);
-
+            
             adminBindingSource.DataSource = admins;
         }
     }

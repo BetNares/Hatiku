@@ -98,7 +98,19 @@ namespace Hatiku.Forms
         private void AssociateAndRaiseEvents()
         {
             txtSearch.TextChanged += delegate { SearchEvent?.Invoke(this, EventArgs.Empty); };
-
+            btnAdd.Click += delegate { AddNewEvent?.Invoke(this, EventArgs.Empty); };
+            btnEdit.Click += delegate { EditEvent?.Invoke(this, EventArgs.Empty); };
+            btnDelete.Click += delegate 
+            {
+                DeleteEvent?.Invoke(this, EventArgs.Empty);
+                MessageBox.Show(Message);
+            };
+            btnSave.Click += delegate 
+            { 
+                SaveEvent?.Invoke(this, EventArgs.Empty);
+                MessageBox.Show(Message);
+            };
+            btnCancel.Click += delegate { CancelEvent?.Invoke(this, EventArgs.Empty); };
         }
 
         public void SetAdminListBinding(BindingSource adminList)
