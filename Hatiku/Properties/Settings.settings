@@ -4,12 +4,12 @@
   <Settings>
     <Setting Name="ConnectionString" Type="(Connection string)" Scope="Application">
       <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+&lt;SerializableConnectionString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
   &lt;ConnectionString&gt;Host=localhost;Port=5432;Database=postgres;User Id=postgres;
-Password=Si4n4kP05T6R35;&lt;/ConnectionString&gt;
+Password=Ubah Password;&lt;/ConnectionString&gt;
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
       <Value Profile="(Default)">Host=localhost;Port=5432;Database=postgres;User Id=postgres;
-Password=Si4n4kP05T6R35;</Value>
+Password=Ubah Password;</Value>
     </Setting>
   </Settings>
 </SettingsFile>

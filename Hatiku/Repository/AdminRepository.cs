@@ -25,17 +25,71 @@ namespace Hatiku.Repository
 
         public bool Add(Admin admin)
         {
-            throw new NotImplementedException();
+            _conn = new NpgsqlConnection(connectionString);
+
+            _queryString = @"select * from st_insert_admin(:_username, :_password)";
+
+            _cmd = new NpgsqlCommand(_queryString, _conn);
+
+            try
+            {
+                _conn.Open();
+                _cmd.Parameters.AddWithValue("_username", admin.Username);
+                _cmd.Parameters.AddWithValue("_password", admin.Password);
+
+                return (int)_cmd.ExecuteScalar() == 1 ? true : false;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Error: " + e.Message, "Error!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
         }
 
         public bool Delete(int id)
         {
-            throw new NotImplementedException();
+            _conn = new NpgsqlConnection(connectionString);
+
+            _queryString = @"select * from st_delete_admin(:_userid)";
+
+            _cmd = new NpgsqlCommand(_queryString, _conn);
+
+            try
+            {
+                _conn.Open();
+                _cmd.Parameters.AddWithValue("_userid", id);
+
+                return (int)_cmd.ExecuteScalar() == 1 ? true : false;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Error: " + e.Message, "Error!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
         }
 
         public bool Edit(Admin admin)
         {
-            throw new NotImplementedException();
+            _conn = new NpgsqlConnection(connectionString);
+
+            _queryString = @"select * from st_update_admin(:_userid, :_username, :_password)";
+
+            _cmd = new NpgsqlCommand(_queryString, _conn);
+
+            try
+            {
+                _conn.Open();
+                _cmd.Parameters.AddWithValue("_userid", admin.Id);
+                _cmd.Parameters.AddWithValue("_username", admin.Username);
+                _cmd.Parameters.AddWithValue("_password", admin.Password);
+
+                return (int)_cmd.ExecuteScalar() == 1 ? true : false;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Error: " + e.Message, "Error!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
         }
 
         public IEnumerable<Admin> FetchAll()
@@ -43,7 +97,7 @@ namespace Hatiku.Repository
             List<Admin> adminList = new List<Admin>();
             _conn = new NpgsqlConnection(connectionString);
 
-            _queryString = @"select * from admin;";
+            _queryString = @"select * from st_select_all_admin();";
 
             _cmd = new NpgsqlCommand(_queryString, _conn);
 
