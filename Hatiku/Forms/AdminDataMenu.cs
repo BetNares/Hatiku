@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using Npgsql;
 using System.Windows.Forms;
 using Hatiku.Views;
+using Hatiku.Views.DataView;
 
 namespace Hatiku.Forms
 {

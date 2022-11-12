@@ -10,7 +10,9 @@ namespace Hatiku.Views
     {
         event EventHandler ShowAdminView;
         event EventHandler ShowPolicyView;
-        event EventHandler ShowExpertSystemView;
-        event EventHandler ShowMachineLearningView;
+        event EventHandler ShowAdminPolicyView;
+        event EventHandler ShowRuleView;
+        event EventHandler ShowRiskDiagnosisResult;
+        event EventHandler ShowRiskDiagnosisHistory;
     }
 }

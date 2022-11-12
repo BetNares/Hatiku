@@ -6,9 +6,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Hatiku.Views
+namespace Hatiku.Views.DataView
 {
-    public interface IMlApiView: IEventView, IShowView
+    public interface IMlApiView: IEventView
     {
         string MlApiId { get; set; }
         string MlApiEndpoint { get; set; }

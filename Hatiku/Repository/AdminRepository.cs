@@ -123,65 +123,56 @@ namespace Hatiku.Repository
                 MessageBox.Show("Error: " + e.Message, "Error!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return null;
             }
-        }
-
-        public Admin FindById(int id)
-        {
-
-            Admin admin = new Admin();
-            _conn = new NpgsqlConnection(connectionString);
-
-            _queryString = @"select * from admin 
-                             where userId=@id
-                             order by userId;";
-
-            _cmd = new NpgsqlCommand(_queryString, _conn);
-            _cmd.Parameters.Add("@id", NpgsqlDbType.Integer).Value = id;
-
-            try
-            {
-                _conn.Open();
-
-                using (var reader = _cmd.ExecuteReader())
-                {
-                    while (reader.Read())
-                    {
-                        admin.Id = (int)reader[0];
-                        admin.Username = reader[1].ToString();
-                        admin.Password = reader[2].ToString();
-                    }
-                }
-
-                _conn.Close();
-                return admin;
-            }
-            catch (Exception e)
-            {
-                MessageBox.Show("Error: " + e.Message, "Error!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return null;
-            }
-
-        }
+        }       
 
         public IEnumerable<Admin> FindByValue(string value)
         {
-            int userId = int.TryParse(value, out _) ? Convert.ToInt32(value) : 00000;
+            if (int.TryParse(value, out _))
+                return FindByValue(Convert.ToInt32(value));
 
             List<Admin> adminList = new List<Admin>();
             _conn = new NpgsqlConnection(connectionString);
 
-            _queryString = @"select * from admin 
-                             where userId=@id or
-                             username like @username+'%'
-                             order by userId desc";
-            MessageBox.Show(_queryString);
+            _queryString = @"select * from st_select_admin_by_value(:_value)";
             _cmd = new NpgsqlCommand(_queryString, _conn);
-            _cmd.Parameters.Add("@id", NpgsqlDbType.Integer).Value = userId;
-            _cmd.Parameters.Add("@username", NpgsqlDbType.Varchar).Value = value;
 
             try
             {
                 _conn.Open();
+                _cmd.Parameters.AddWithValue("_value", value);
+                using (var reader = _cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        var admin = new Admin();
+                        admin.Id = (int)reader[0];
+                        admin.Username = reader[1].ToString();
+                        admin.Password = reader[2].ToString();
+                        adminList.Add(admin);
+                    }
+                }
+                _conn.Close();
+                return adminList;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Error: " + e, "Error!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return null;
+            }
+        }
+
+        public IEnumerable<Admin> FindByValue(int value)
+        {
+            List<Admin> adminList = new List<Admin>();
+            _conn = new NpgsqlConnection(connectionString);
+
+            _queryString = @"select * from st_select_admin_by_id(:_value)";
+            _cmd = new NpgsqlCommand(_queryString, _conn);
+
+            try
+            {
+                _conn.Open();
+                _cmd.Parameters.AddWithValue("_value", value);
                 using (var reader = _cmd.ExecuteReader())
                 {
                     while (reader.Read())

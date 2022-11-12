@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Hatiku.Views.EventView;
 
-namespace Hatiku.Views
+
+namespace Hatiku.Views.DataView
 {
-    public interface IRiskDiagnosisHistory: IEventView, IUpdateEventView, IShowView
+    public interface IRiskDiagnosisResult: IEventView, IUpdateEventView
     {
         DateTime ResultId { get; set; }
-        int RuleId { get; set; }
+        float RiskResult { get; set; }
 
-        void SetRiskHistoryBindingSource(BindingSource riskHistoryBindingSource);
+        void SetRiskResultBindingSource(BindingSource riskResultBindingSource);
     }
 }

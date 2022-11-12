@@ -1,6 +1,7 @@
 ﻿using Hatiku.Models;
 using Hatiku.Models.IRepository;
 using Hatiku.Views;
+using Hatiku.Views.DataView;
 using System;
 using System.Collections.Generic;
 using System.Linq;

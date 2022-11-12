@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Hatiku.Views.EventView;
 
-namespace Hatiku.Views
+namespace Hatiku.Views.DataView
 {
-    public interface IRule : IEventView, IUpdateEventView, IShowView
+    public interface IRule : IEventView, IUpdateEventView
     {
         int RuleId { get; set; }
         string Evidence { get; set; }
