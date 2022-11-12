@@ -13,7 +13,7 @@ namespace Hatiku.Forms
 
     public partial class HomeForm : Form
     {
-        ProfileForm _profileForm;
+        AboutForm _profileForm;
         InputDataForm _InputDataForm;
         public HomeForm()
         {
@@ -27,7 +27,7 @@ namespace Hatiku.Forms
 
         private void btnCheckProfile_Click(object sender, EventArgs e)
         {
-            _profileForm = new ProfileForm();
+            _profileForm = new AboutForm();
 
             _profileForm.Location = this.Location;
             _profileForm.StartPosition = FormStartPosition.Manual;

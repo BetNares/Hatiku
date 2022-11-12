@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Hatiku.Forms
 {
-    public partial class InputDataForm : Form
+    public partial class AboutForm : Form
     {
-        public InputDataForm()
+        public AboutForm()
         {
             InitializeComponent();
         }
@@ -20,11 +20,6 @@ namespace Hatiku.Forms
         private void lblClose_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
