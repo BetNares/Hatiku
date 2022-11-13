@@ -1,6 +1,6 @@
 ﻿namespace Hatiku.Forms
 {
-    partial class HomeForm
+    partial class DoctorHomeForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DoctorHomeForm));
             this.btnAbout = new System.Windows.Forms.Button();
             this.btnStartTest = new System.Windows.Forms.Button();
             this.lblClose = new System.Windows.Forms.Label();

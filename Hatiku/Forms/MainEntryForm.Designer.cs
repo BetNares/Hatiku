@@ -1,6 +1,6 @@
 ﻿namespace Hatiku.Forms
 {
-    partial class MainEntryFrom
+    partial class MainEntryForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainEntryFrom));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainEntryForm));
             this.btnAdmin = new System.Windows.Forms.PictureBox();
             this.btnDoctor = new System.Windows.Forms.PictureBox();
             this.lblWhoareyou = new System.Windows.Forms.Label();

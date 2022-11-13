@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Hatiku.Forms
 {
-    public partial class MainEntryFrom : Form
+    public partial class MainEntryForm : Form
     {
-        public MainEntryFrom()
+        public MainEntryForm()
         {
             InitializeComponent();
         }

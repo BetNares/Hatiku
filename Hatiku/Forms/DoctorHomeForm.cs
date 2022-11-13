@@ -11,11 +11,11 @@ using System.Windows.Forms;
 namespace Hatiku.Forms
 {
 
-    public partial class HomeForm : Form
+    public partial class DoctorHomeForm : Form
     {
         AboutForm _profileForm;
         InputDataForm _InputDataForm;
-        public HomeForm()
+        public DoctorHomeForm()
         {
             InitializeComponent();
         }

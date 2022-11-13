@@ -56,6 +56,7 @@ namespace Hatiku.Forms
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.Teal;
             this.panel1.Controls.Add(this.txtId);
             this.panel1.Controls.Add(this.lblPassword);
             this.panel1.Controls.Add(this.txtPassword);
@@ -78,9 +79,11 @@ namespace Hatiku.Forms
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
+            this.lblPassword.Font = new System.Drawing.Font("UD Digi Kyokasho NK-B", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblPassword.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblPassword.Location = new System.Drawing.Point(64, 97);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(85, 23);
+            this.lblPassword.Size = new System.Drawing.Size(83, 17);
             this.lblPassword.TabIndex = 12;
             this.lblPassword.Text = "Password";
             // 
@@ -101,24 +104,29 @@ namespace Hatiku.Forms
             // lblUsername
             // 
             this.lblUsername.AutoSize = true;
+            this.lblUsername.Font = new System.Drawing.Font("UD Digi Kyokasho NK-B", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblUsername.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblUsername.Location = new System.Drawing.Point(64, 59);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(89, 23);
+            this.lblUsername.Size = new System.Drawing.Size(86, 17);
             this.lblUsername.TabIndex = 8;
             this.lblUsername.Text = "Username";
             // 
             // lblId
             // 
             this.lblId.AutoSize = true;
+            this.lblId.Font = new System.Drawing.Font("UD Digi Kyokasho NK-B", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblId.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblId.Location = new System.Drawing.Point(64, 21);
             this.lblId.Name = "lblId";
-            this.lblId.Size = new System.Drawing.Size(66, 23);
+            this.lblId.Size = new System.Drawing.Size(66, 17);
             this.lblId.TabIndex = 7;
             this.lblId.Text = "User Id";
             // 
             // btnAdd
             // 
             this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAdd.Font = new System.Drawing.Font("UD Digi Kyokasho NK-B", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnAdd.Location = new System.Drawing.Point(64, 17);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(94, 30);
@@ -129,6 +137,7 @@ namespace Hatiku.Forms
             // btnEdit
             // 
             this.btnEdit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEdit.Font = new System.Drawing.Font("UD Digi Kyokasho NK-B", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnEdit.Location = new System.Drawing.Point(173, 17);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(94, 30);
@@ -139,6 +148,7 @@ namespace Hatiku.Forms
             // btnDelete
             // 
             this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDelete.Font = new System.Drawing.Font("UD Digi Kyokasho NK-B", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnDelete.Location = new System.Drawing.Point(282, 17);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(94, 30);
@@ -148,6 +158,7 @@ namespace Hatiku.Forms
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.Turquoise;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 208);
             this.panel2.Name = "panel2";
@@ -156,6 +167,7 @@ namespace Hatiku.Forms
             // 
             // panel3
             // 
+            this.panel3.BackColor = System.Drawing.Color.CadetBlue;
             this.panel3.Controls.Add(this.btnDelete);
             this.panel3.Controls.Add(this.lblSearch);
             this.panel3.Controls.Add(this.btnEdit);
@@ -170,9 +182,10 @@ namespace Hatiku.Forms
             // lblSearch
             // 
             this.lblSearch.AutoSize = true;
+            this.lblSearch.Font = new System.Drawing.Font("UD Digi Kyokasho NK-B", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblSearch.Location = new System.Drawing.Point(565, 22);
             this.lblSearch.Name = "lblSearch";
-            this.lblSearch.Size = new System.Drawing.Size(42, 23);
+            this.lblSearch.Size = new System.Drawing.Size(41, 17);
             this.lblSearch.TabIndex = 18;
             this.lblSearch.Text = "Cari";
             // 
@@ -188,6 +201,7 @@ namespace Hatiku.Forms
             // 
             // panel4
             // 
+            this.panel4.BackColor = System.Drawing.Color.Turquoise;
             this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel4.Location = new System.Drawing.Point(1110, 208);
             this.panel4.Name = "panel4";
@@ -196,6 +210,7 @@ namespace Hatiku.Forms
             // 
             // panel5
             // 
+            this.panel5.BackColor = System.Drawing.Color.Turquoise;
             this.panel5.Controls.Add(this.btnCancel);
             this.panel5.Controls.Add(this.btnSave);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -228,6 +243,7 @@ namespace Hatiku.Forms
             // 
             // dataGridViewAdmin
             // 
+            this.dataGridViewAdmin.BackgroundColor = System.Drawing.Color.OldLace;
             this.dataGridViewAdmin.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewAdmin.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewAdmin.Location = new System.Drawing.Point(64, 208);

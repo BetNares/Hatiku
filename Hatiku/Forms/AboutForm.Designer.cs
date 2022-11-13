@@ -35,7 +35,7 @@
             // 
             this.lblClose.AutoSize = true;
             this.lblClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblClose.Location = new System.Drawing.Point(1034, 12);
+            this.lblClose.Location = new System.Drawing.Point(1418, 9);
             this.lblClose.Name = "lblClose";
             this.lblClose.Size = new System.Drawing.Size(18, 20);
             this.lblClose.TabIndex = 4;
@@ -48,7 +48,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(1064, 604);
+            this.ClientSize = new System.Drawing.Size(1448, 724);
             this.Controls.Add(this.lblClose);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
