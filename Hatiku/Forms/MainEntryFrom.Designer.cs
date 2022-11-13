@@ -29,42 +29,42 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainEntryFrom));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.btnAdmin = new System.Windows.Forms.PictureBox();
+            this.btnDoctor = new System.Windows.Forms.PictureBox();
+            this.lblWhoareyou = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAdmin)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnDoctor)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // btnAdmin
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(319, 218);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(387, 386);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.btnAdmin.Image = ((System.Drawing.Image)(resources.GetObject("btnAdmin.Image")));
+            this.btnAdmin.Location = new System.Drawing.Point(319, 218);
+            this.btnAdmin.Name = "btnAdmin";
+            this.btnAdmin.Size = new System.Drawing.Size(387, 386);
+            this.btnAdmin.TabIndex = 0;
+            this.btnAdmin.TabStop = false;
             // 
-            // pictureBox2
+            // btnDoctor
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(747, 218);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(387, 386);
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
+            this.btnDoctor.Image = ((System.Drawing.Image)(resources.GetObject("btnDoctor.Image")));
+            this.btnDoctor.Location = new System.Drawing.Point(747, 218);
+            this.btnDoctor.Name = "btnDoctor";
+            this.btnDoctor.Size = new System.Drawing.Size(387, 386);
+            this.btnDoctor.TabIndex = 1;
+            this.btnDoctor.TabStop = false;
             // 
-            // label1
+            // lblWhoareyou
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("UD Digi Kyokasho NK-B", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(574, 120);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(301, 46);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Who are you?";
+            this.lblWhoareyou.AutoSize = true;
+            this.lblWhoareyou.Font = new System.Drawing.Font("UD Digi Kyokasho NK-B", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblWhoareyou.Location = new System.Drawing.Point(574, 120);
+            this.lblWhoareyou.Name = "lblWhoareyou";
+            this.lblWhoareyou.Size = new System.Drawing.Size(301, 46);
+            this.lblWhoareyou.TabIndex = 2;
+            this.lblWhoareyou.Text = "Who are you?";
             // 
             // label2
             // 
@@ -96,14 +96,14 @@
             this.ClientSize = new System.Drawing.Size(1448, 724);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.lblWhoareyou);
+            this.Controls.Add(this.btnDoctor);
+            this.Controls.Add(this.btnAdmin);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MainEntryFrom";
             this.Text = "MainEntryFrom";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAdmin)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnDoctor)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -111,9 +111,9 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox btnAdmin;
+        private System.Windows.Forms.PictureBox btnDoctor;
+        private System.Windows.Forms.Label lblWhoareyou;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
     }
