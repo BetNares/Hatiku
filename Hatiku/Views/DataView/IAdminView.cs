@@ -7,7 +7,7 @@ using System.Windows.Forms;
 using Hatiku.Views.EventView;
 
 
-namespace Hatiku.Views
+namespace Hatiku.Views.DataView
 {
     public interface IAdminView: IEventView, IUpdateEventView
     {

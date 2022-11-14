@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Hatiku.Views.EventView;
 
-namespace Hatiku.Views
+namespace Hatiku.Views.DataView
 {
-    public interface IPolicyView: IEventView, IUpdateEventView, IShowView
+    public interface IPolicyView: IEventView, IUpdateEventView
     {
         int PolicyId { get; set; }
         string Name { get; set; }

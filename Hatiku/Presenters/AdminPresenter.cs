@@ -7,6 +7,7 @@ using System.Windows.Forms;
 using Hatiku.Models;
 using Hatiku.Models.IRepository;
 using Hatiku.Views;
+using Hatiku.Views.DataView;
 
 namespace Hatiku.Presenters
 {

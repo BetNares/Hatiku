@@ -7,9 +7,9 @@ using System.Windows.Forms;
 using Hatiku.Views.EventView;
 
 
-namespace Hatiku.Views
+namespace Hatiku.Views.DataView
 {
-    public interface IDiseaseDiagnosisHistory: IEventView, IShowView
+    public interface IDiseaseDiagnosisHistory: IEventView
     {
         int Age { get; set;  }
         int Height { get; set; }

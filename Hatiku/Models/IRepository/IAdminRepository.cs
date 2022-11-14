@@ -9,8 +9,8 @@ namespace Hatiku.Models.IRepository
     public interface IAdminRepository
     {
         IEnumerable<Admin> FetchAll();
-        Admin FindById(int id);
         IEnumerable<Admin> FindByValue(string value);
+        IEnumerable<Admin> FindByValue(int value);
         bool Add(Admin admin);
         bool Edit(Admin admin);
         bool Delete(int id);

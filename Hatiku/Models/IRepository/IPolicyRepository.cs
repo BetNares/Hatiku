@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Hatiku.Models.IRepository
 {
-    interface IPolicyRepository
+    public interface IPolicyRepository
     {
         IEnumerable<Policy> FetchAll();
         Policy Find(int id);

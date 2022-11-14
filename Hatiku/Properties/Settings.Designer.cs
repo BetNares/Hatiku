@@ -26,8 +26,8 @@ namespace Hatiku.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Host=localhost;Port=5432;Database=postgres;User Id=postgres;\nPassword=Si4n4kP05T6" +
-            "R35;")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Host=localhost;Port=5432;Database=postgres;User Id=postgres;\nPassword=Ubah Passwo" +
+            "rd di sini;")]
         public string ConnectionString {
             get {
                 return ((string)(this["ConnectionString"]));
