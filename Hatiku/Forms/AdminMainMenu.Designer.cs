@@ -1,4 +1,3 @@
-﻿
 namespace Hatiku.Forms
 {
     partial class AdminMainMenu
@@ -158,7 +157,7 @@ namespace Hatiku.Forms
             // 
             // titlePanel
             // 
-            this.titlePanel.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.titlePanel.BackColor = System.Drawing.Color.MediumTurquoise;
             this.titlePanel.Controls.Add(this.lblTitle);
             resources.ApplyResources(this.titlePanel, "titlePanel");
             this.titlePanel.Name = "titlePanel";
