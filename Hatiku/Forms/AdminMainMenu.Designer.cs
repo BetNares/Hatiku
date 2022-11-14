@@ -54,6 +54,7 @@ namespace Hatiku.Forms
             // 
             // buttonPanel
             // 
+            this.buttonPanel.BackColor = System.Drawing.Color.MediumTurquoise;
             this.buttonPanel.Controls.Add(this.button4);
             this.buttonPanel.Controls.Add(this.btnExpertSystem);
             this.buttonPanel.Controls.Add(this.btnPolicy);
@@ -104,7 +105,7 @@ namespace Hatiku.Forms
             // 
             // titlePanel
             // 
-            this.titlePanel.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.titlePanel.BackColor = System.Drawing.Color.MediumTurquoise;
             this.titlePanel.Controls.Add(this.lblTitle);
             resources.ApplyResources(this.titlePanel, "titlePanel");
             this.titlePanel.Name = "titlePanel";

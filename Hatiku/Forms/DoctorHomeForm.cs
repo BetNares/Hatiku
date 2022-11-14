@@ -11,11 +11,11 @@ using System.Windows.Forms;
 namespace Hatiku.Forms
 {
 
-    public partial class HomeForm : Form
+    public partial class DoctorHomeForm : Form
     {
-        ProfileForm _profileForm;
+        AboutForm _profileForm;
         InputDataForm _InputDataForm;
-        public HomeForm()
+        public DoctorHomeForm()
         {
             InitializeComponent();
         }
@@ -27,7 +27,7 @@ namespace Hatiku.Forms
 
         private void btnCheckProfile_Click(object sender, EventArgs e)
         {
-            _profileForm = new ProfileForm();
+            _profileForm = new AboutForm();
 
             _profileForm.Location = this.Location;
             _profileForm.StartPosition = FormStartPosition.Manual;

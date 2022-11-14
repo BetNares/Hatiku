@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace Hatiku.Forms
 {
-    public partial class ProfileForm : Form
+    public partial class AdminPolicyMenu : Form
     {
-        public ProfileForm()
+        public AdminPolicyMenu()
         {
             InitializeComponent();
         }
 
-        private void lblClose_Click(object sender, EventArgs e)
+        private void lblId_Click(object sender, EventArgs e)
         {
-            this.Close();
+
         }
     }
 }
