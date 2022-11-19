@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ooy3pcmsyo2G9pV48UQVzzuhj5J8d/fnarGNZs79IaAT2XMVJ70JGlE8rG6ugaIm7qCMRjaauhu9uo+pKfthVg==",
+  "dgSpecHash": "o2m4p381RXgYCOJ531cUfnZ0BHwyGgm9xRCi/lGnGSlBiCkX/WqrTZ0/RCSr21OhccqPs9/NQiqEoSK681rb3g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\LENOVO\\source\\repos\\Hatiku\\Hatiku\\Hatiku.csproj",
+  "projectFilePath": "D:\\Devon\\Website stuff\\Hatiku\\Hatiku\\Hatiku.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
