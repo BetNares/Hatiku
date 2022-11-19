@@ -7,6 +7,9 @@
     <Compile Update="Forms\AdminMainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\ErrorHandlerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\HomeForm.cs">
       <SubType>Form</SubType>
     </Compile>

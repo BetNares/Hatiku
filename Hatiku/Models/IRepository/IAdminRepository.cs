@@ -11,6 +11,8 @@ namespace Hatiku.Models.IRepository
         IEnumerable<Admin> FetchAll();
         IEnumerable<Admin> FindByValue(string value);
         IEnumerable<Admin> FindByValue(int value);
+        int GetId(string username);
+        bool Login(string username, string password);
         bool Add(Admin admin);
         bool Edit(Admin admin);
         bool Delete(int id);

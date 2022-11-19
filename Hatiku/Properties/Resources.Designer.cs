@@ -143,6 +143,16 @@ namespace Hatiku.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap unauthorized {
+            get {
+                object obj = ResourceManager.GetObject("unauthorized", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap users_alt_32px {
             get {
                 object obj = ResourceManager.GetObject("users-alt-32px", resourceCulture);
