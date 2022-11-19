@@ -9,7 +9,7 @@ using Hatiku.Views.EventView;
 
 namespace Hatiku.Views.DataView
 {
-    public interface IAdminView: IEventView, IUpdateEventView
+    public interface IAdminView: IEventView, IUpdateEventView, IShowView
     {
         int UserId { get; set; }
         string Username { get; set; }

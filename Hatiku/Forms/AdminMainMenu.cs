@@ -25,7 +25,7 @@ namespace Hatiku.Forms
             btnPolicy.Click += delegate
             {
                 this.lblTitle.Text = this.btnPolicy.Text;
-                ShowAdminPolicyView?.Invoke(this, EventArgs.Empty);
+                ShowPolicyView?.Invoke(this, EventArgs.Empty);
             };
 
             btnAdminPolicy.Click += delegate

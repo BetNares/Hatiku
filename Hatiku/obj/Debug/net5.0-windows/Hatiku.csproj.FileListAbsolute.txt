@@ -52,3 +52,4 @@ C:\Users\LENOVO\source\repos\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.dll
 C:\Users\LENOVO\source\repos\Hatiku\Hatiku\obj\Debug\net5.0-windows\ref\Hatiku.dll
 C:\Users\LENOVO\source\repos\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.pdb
 C:\Users\LENOVO\source\repos\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.genruntimeconfig.cache
+C:\Users\LENOVO\source\repos\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.Forms.ErrorHandlerForm.resources

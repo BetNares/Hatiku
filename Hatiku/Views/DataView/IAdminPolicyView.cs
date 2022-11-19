@@ -8,7 +8,7 @@ using Hatiku.Views.EventView;
 
 namespace Hatiku.Views.DataView
 {
-    public interface IAdminPolicyView: IEventView, IUpdateEventView
+    public interface IAdminPolicyView: IEventView, IUpdateEventView, IShowView
     {
         int UserId { get; set; }
         int PolicyId { get; set; }

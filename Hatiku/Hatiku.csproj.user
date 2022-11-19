@@ -19,6 +19,9 @@
     <Compile Update="Forms\DoctorHomeForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\ErrorHandlerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\InputDataForm.cs">
       <SubType>Form</SubType>
     </Compile>
