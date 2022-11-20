@@ -9,5 +9,7 @@ namespace Hatiku.Repository
     public abstract class BaseRepository
     {
         protected string connectionString;
+
+
     }
 }

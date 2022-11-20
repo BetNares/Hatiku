@@ -48,7 +48,6 @@
             this.btnAbout.Text = "About the app";
             this.btnAbout.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnAbout.UseVisualStyleBackColor = false;
-            this.btnAbout.Click += new System.EventHandler(this.btnCheckProfile_Click);
             // 
             // btnStartTest
             // 

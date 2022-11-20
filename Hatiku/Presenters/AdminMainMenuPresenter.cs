@@ -28,6 +28,8 @@ namespace Hatiku.Presenters
             this.adminMainMenuView.ShowRuleView += ShowRuleView;
             this.adminMainMenuView.ShowRiskDiagnosisResult += ShowRiskDiagnosisResult;
             this.adminMainMenuView.ShowRiskDiagnosisHistory += ShowRiskDiagnosisHistory;
+
+            ((Form)adminMainMenuView).Show();
         }
 
         private void ShowRiskDiagnosisHistory(object sender, EventArgs e)
@@ -47,18 +49,17 @@ namespace Hatiku.Presenters
 
         private void ShowAdminPolicyView(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
-            //IAdminPolicyView adminPolicyView = <Nama Form buat admin-policy>.GetMenu((AdminMainMenu)adminMainMenuView);
-            //IAdminPolicyRepository adminPolicyRepository = new AdminPolicyRepository(connectionString);
-            //new AdminPolicyPresenter(policyRepository, policyView);
+            IAdminPolicyView adminPolicyView = AdminAttachPolicy.GetMenu((AdminMainMenu)adminMainMenuView);
+            IAdminPolicyRepository adminPolicyRepository = new AdminPolicyRepository(connectionString);
+            _ = new AdminPolicyPresenter(adminPolicyRepository, adminPolicyView);
         }
 
         private void ShowPolicyView(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
-            //IPolicyView policyView = <Nama Form buat policy>.GetMenu((AdminMainMenu)adminMainMenuView);
-            //IPolicyRepository policyRepository = new PolicyRepository(connectionString);
-            //new PolicyPresenter(policyRepository, policyView);
+            //throw new NotImplementedException();
+            IPolicyView policyView = AdminPolicyMenu.GetMenu((AdminMainMenu)adminMainMenuView);
+            IPolicyRepository policyRepository = new PolicyRepository(connectionString);
+            new PolicyPresenter(policyRepository, policyView);
         }
 
         private void ShowAdminView(object sender, EventArgs e)

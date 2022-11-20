@@ -17,6 +17,7 @@ namespace Hatiku.Forms
             InitializeComponent();
         }
 
+
         private void lblClose_Click(object sender, EventArgs e)
         {
             this.Close();

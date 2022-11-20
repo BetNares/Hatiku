@@ -193,5 +193,15 @@ namespace Hatiku.Repository
                 return null;
             }
         }
+
+
+        public bool Login(string username, string password)
+        {
+            Admin admin = (Admin)FindByValue(username);
+            if(admin?.Username == username && admin?.Password == password)
+                return true;
+
+            return false;
+        }
     }
 }

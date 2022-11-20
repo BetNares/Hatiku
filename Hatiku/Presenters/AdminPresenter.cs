@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Hatiku.Models;
 using Hatiku.Models.IRepository;
+using Hatiku.Utils;
 using Hatiku.Views;
 using Hatiku.Views.DataView;
 
@@ -25,21 +26,21 @@ namespace Hatiku.Presenters
             this.adminBindingSource = new BindingSource();
 
             // Subscribe event
-            this.adminView.AddNewEvent += AddNewAdmin;
-            this.adminView.EditEvent += EditAdmin;
-            this.adminView.DeleteEvent += DeleteAdmin;
-            this.adminView.CancelEvent += CancelEvent;
-            this.adminView.SaveEvent += Save;
-            this.adminView.SearchEvent += SearchAdmin;
+            adminView.AddNewEvent += AddNewAdmin;
+            adminView.EditEvent += EditAdmin;
+            adminView.DeleteEvent += DeleteAdmin;
+            adminView.CancelEvent += CancelEvent;
+            adminView.SaveEvent += Save;
+            adminView.SearchEvent += SearchAdmin;
 
             // Set binding source
-            this.adminView.SetAdminListBinding(adminBindingSource);
+            adminView.SetAdminListBinding(adminBindingSource);
 
             // Get Admin Data
             LoadAllAdminData();
 
             // Load data
-            ((Form)(this.adminView)).Show();
+            ((Form)this.adminView).Show();
         }
 
         private void LoadAllAdminData()
