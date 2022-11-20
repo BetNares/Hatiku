@@ -14,7 +14,9 @@ namespace Hatiku.Forms {
     public partial class InputDataForm : Form
     {
         private Dictionary<string, string> ExpertSystemInput = new Dictionary<string, string>();
-        
+        private Dictionary<string, string> MachineLearningInput = new Dictionary<string, string>();
+
+
 
         public InputDataForm()
         {
@@ -29,6 +31,22 @@ namespace Hatiku.Forms {
 
         private void InputFetch(object sender, EventArgs e)
         {
+
+            MachineLearningInput["key"] = "value";
+
+            MachineLearningInput.Add("age", inputAge.Text);
+            MachineLearningInput.Add("gender", inputGender.Text);
+            MachineLearningInput.Add("height", inputHeight.Text);
+            MachineLearningInput.Add("weight", inputWeight.Text);
+            MachineLearningInput.Add("ap_hi", inputAPHigh.Text);
+            MachineLearningInput.Add("ap_lo", inputAPLow.Text);
+            MachineLearningInput.Add("cholesterol", inputCholesterol.Text);
+            MachineLearningInput.Add("gluc", inputGlucose.Text);
+            MachineLearningInput.Add("smoke", inputSmoke.Text);
+            MachineLearningInput.Add("alco", inputAlcohol.Text);
+            MachineLearningInput.Add("active", inputActive.Text);
+            MachineLearningInput.Add("racial_identity", InputRacialIdentity.Text);
+
             ExpertSystemInput["key"] = "value";
 
 
