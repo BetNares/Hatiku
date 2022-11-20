@@ -8,8 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using Npgsql;
 using System.Windows.Forms;
-using Hatiku.Views;
 using Hatiku.Views.DataView;
+using Hatiku.Utils;
+using Hatiku.Presenters;
+using Hatiku.Views;
 
 namespace Hatiku.Forms
 {
@@ -18,6 +20,7 @@ namespace Hatiku.Forms
         private string _message;
         private bool _isSuccess;
         private bool _isEdit;
+        private List<string> _permissions;
 
         public AdminDataMenu()
         {
@@ -117,6 +120,23 @@ namespace Hatiku.Forms
         public void SetAdminListBinding(BindingSource adminList)
         {
             dataGridViewAdmin.DataSource = adminList;
+        }
+
+        public new void Show()
+        {
+            // Cek terlebih dahulu apakah admin boleh mengakses atau tidak
+            if (AccessControl.CheckAuthorization(_permissions))
+                base.Show();
+            else
+            {
+                IErrorHandlerView errorHandler = ErrorHandlerForm.GetMenu((AdminMainMenu)MdiParent);
+
+                string msgTitle = "Tidak Ada Izin";
+                string msg = "Anda tidak memiliki izin untuk mengakses menu ini. " + 
+                    "Hubungi Administrator Anda untuk meminta izin akses.";
+
+                _ = new ErrorHandlerFormPresenter(errorHandler, msgTitle, msg);
+            }
         }
     }
 }

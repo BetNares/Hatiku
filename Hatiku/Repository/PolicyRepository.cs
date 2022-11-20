@@ -30,7 +30,22 @@ namespace Hatiku.Repository
             throw new NotImplementedException();
         }
 
-        public Policy Find(int id)
+        public IEnumerable<Policy> FindByValue(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IEnumerable<Policy> FindByValue(string value)
+        {
+            throw new NotImplementedException();
+        }
+
+        public int GetId(string policyName)
+        {
+            throw new NotImplementedException();
+        }
+
+        public int GetId(Policy policy)
         {
             throw new NotImplementedException();
         }

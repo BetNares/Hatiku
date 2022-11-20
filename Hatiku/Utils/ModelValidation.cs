@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Hatiku.Presenters
+namespace Hatiku.Utils
 {
     public static class ModelValidation
     {
