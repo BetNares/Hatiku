@@ -61,5 +61,20 @@ namespace Hatiku.Forms
         public event EventHandler ShowRiskDiagnosisResult;
         public event EventHandler ShowRiskDiagnosisHistory;
 
+        private static AdminMainMenu _adminMainMenu;
+        public static AdminMainMenu GetMenu()
+        {
+            if (_adminMainMenu == null || _adminMainMenu.IsDisposed)
+            {
+                _adminMainMenu = new AdminMainMenu();
+            }
+            else
+            {
+                _adminMainMenu.WindowState = _adminMainMenu.WindowState == FormWindowState.Minimized ?
+                                                    FormWindowState.Normal : _adminMainMenu.WindowState;
+                _adminMainMenu.BringToFront();
+            }
+            return _adminMainMenu;
+        }
     }
 }

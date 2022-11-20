@@ -138,7 +138,6 @@
     <value>     Policy</value>
   </data>
   <data name="btnPolicy.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing.Common">
-
     <value>MiddleLeft</value>
   </data>
   <data name="btnPolicy.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
@@ -480,20 +479,20 @@
   <data name="buttonPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="buttonPanel.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="buttonPanel.Location" type="System.Drawing.Point, System.Drawing.Primitives">
     <value>0, 64</value>
   </data>
-  <data name="buttonPanel.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="buttonPanel.Size" type="System.Drawing.Size, System.Drawing.Primitives">
     <value>248, 789</value>
   </data>
-  <data name="buttonPanel.TabIndex" type="System.Int32, mscorlib">
+  <data name="buttonPanel.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>2</value>
   </data>
   <data name="&gt;&gt;buttonPanel.Name" xml:space="preserve">
     <value>buttonPanel</value>
   </data>
   <data name="&gt;&gt;buttonPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;buttonPanel.Parent" xml:space="preserve">
     <value>pnlDataMenu</value>
@@ -504,20 +503,20 @@
   <data name="dataHomePanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="dataHomePanel.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="dataHomePanel.Location" type="System.Drawing.Point, System.Drawing.Primitives">
     <value>0, 0</value>
   </data>
-  <data name="dataHomePanel.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="dataHomePanel.Size" type="System.Drawing.Size, System.Drawing.Primitives">
     <value>248, 64</value>
   </data>
-  <data name="dataHomePanel.TabIndex" type="System.Int32, mscorlib">
+  <data name="dataHomePanel.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>1</value>
   </data>
   <data name="&gt;&gt;dataHomePanel.Name" xml:space="preserve">
     <value>dataHomePanel</value>
   </data>
   <data name="&gt;&gt;dataHomePanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;dataHomePanel.Parent" xml:space="preserve">
     <value>pnlDataMenu</value>
@@ -528,20 +527,20 @@
   <data name="pnlDataMenu.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Left</value>
   </data>
-  <data name="pnlDataMenu.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="pnlDataMenu.Location" type="System.Drawing.Point, System.Drawing.Primitives">
     <value>0, 0</value>
   </data>
-  <data name="pnlDataMenu.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="pnlDataMenu.Size" type="System.Drawing.Size, System.Drawing.Primitives">
     <value>248, 853</value>
   </data>
-  <data name="pnlDataMenu.TabIndex" type="System.Int32, mscorlib">
+  <data name="pnlDataMenu.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>0</value>
   </data>
   <data name="&gt;&gt;pnlDataMenu.Name" xml:space="preserve">
     <value>pnlDataMenu</value>
   </data>
   <data name="&gt;&gt;pnlDataMenu.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;pnlDataMenu.Parent" xml:space="preserve">
     <value>$this</value>
@@ -552,32 +551,32 @@
   <data name="lblTitle.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="lblTitle.AutoSize" type="System.Boolean, mscorlib">
+  <data name="lblTitle.AutoSize" type="System.Boolean, System.Private.CoreLib">
     <value>True</value>
   </data>
-  <data name="lblTitle.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="lblTitle.Font" type="System.Drawing.Font, System.Drawing.Common">
     <value>Segoe UI, 19.800001pt, style=Bold</value>
   </data>
-  <data name="lblTitle.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="lblTitle.Location" type="System.Drawing.Point, System.Drawing.Primitives">
     <value>451, 9</value>
   </data>
-  <data name="lblTitle.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="lblTitle.Size" type="System.Drawing.Size, System.Drawing.Primitives">
     <value>91, 46</value>
   </data>
-  <data name="lblTitle.TabIndex" type="System.Int32, mscorlib">
+  <data name="lblTitle.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>2</value>
   </data>
   <data name="lblTitle.Text" xml:space="preserve">
     <value>Title</value>
   </data>
-  <data name="lblTitle.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="lblTitle.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing.Common">
     <value>MiddleCenter</value>
   </data>
   <data name="&gt;&gt;lblTitle.Name" xml:space="preserve">
     <value>lblTitle</value>
   </data>
   <data name="&gt;&gt;lblTitle.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblTitle.Parent" xml:space="preserve">
     <value>titlePanel</value>
@@ -588,20 +587,20 @@
   <data name="titlePanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="titlePanel.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="titlePanel.Location" type="System.Drawing.Point, System.Drawing.Primitives">
     <value>248, 0</value>
   </data>
-  <data name="titlePanel.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="titlePanel.Size" type="System.Drawing.Size, System.Drawing.Primitives">
     <value>1174, 64</value>
   </data>
-  <data name="titlePanel.TabIndex" type="System.Int32, mscorlib">
+  <data name="titlePanel.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>1</value>
   </data>
   <data name="&gt;&gt;titlePanel.Name" xml:space="preserve">
     <value>titlePanel</value>
   </data>
   <data name="&gt;&gt;titlePanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;titlePanel.Parent" xml:space="preserve">
     <value>$this</value>
@@ -609,13 +608,13 @@
   <data name="&gt;&gt;titlePanel.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="$this.Localizable" type="System.Boolean, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
     <value>True</value>
   </metadata>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing.Primitives">
     <value>8, 20</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing.Primitives">
     <value>1422, 853</value>
   </data>
   <data name="$this.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
@@ -631,6 +630,6 @@
     <value>AdminMainMenu</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

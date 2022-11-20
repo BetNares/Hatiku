@@ -30,10 +30,6 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtId = new System.Windows.Forms.TextBox();
-            this.lblDetails = new System.Windows.Forms.Label();
-            this.txtDetails = new System.Windows.Forms.TextBox();
-            this.txtPolicyName = new System.Windows.Forms.TextBox();
-            this.lblPolicyName = new System.Windows.Forms.Label();
             this.lblId = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnDelete = new System.Windows.Forms.Button();
@@ -47,6 +43,10 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
+            this.txtDetails = new System.Windows.Forms.TextBox();
+            this.lblDetails = new System.Windows.Forms.Label();
+            this.lblPolicyName = new System.Windows.Forms.Label();
+            this.txtPolicyName = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -75,50 +75,14 @@
             this.txtId.Size = new System.Drawing.Size(94, 27);
             this.txtId.TabIndex = 13;
             // 
-            // lblDetails
-            // 
-            this.lblDetails.AutoSize = true;
-            this.lblDetails.Font = new System.Drawing.Font("UD Digi Kyokasho NK-B", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblDetails.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblDetails.Location = new System.Drawing.Point(64, 97);
-            this.lblDetails.Name = "lblDetails";
-            this.lblDetails.Size = new System.Drawing.Size(64, 17);
-            this.lblDetails.TabIndex = 12;
-            this.lblDetails.Text = "Details";
-            // 
-            // txtDetails
-            // 
-            this.txtDetails.Location = new System.Drawing.Point(173, 94);
-            this.txtDetails.Name = "txtDetails";
-            this.txtDetails.Size = new System.Drawing.Size(336, 27);
-            this.txtDetails.TabIndex = 11;
-            // 
-            // txtPolicyName
-            // 
-            this.txtPolicyName.Location = new System.Drawing.Point(173, 56);
-            this.txtPolicyName.Name = "txtPolicyName";
-            this.txtPolicyName.Size = new System.Drawing.Size(336, 27);
-            this.txtPolicyName.TabIndex = 10;
-            // 
-            // lblPolicyName
-            // 
-            this.lblPolicyName.AutoSize = true;
-            this.lblPolicyName.Font = new System.Drawing.Font("UD Digi Kyokasho NK-B", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblPolicyName.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblPolicyName.Location = new System.Drawing.Point(64, 59);
-            this.lblPolicyName.Name = "lblPolicyName";
-            this.lblPolicyName.Size = new System.Drawing.Size(102, 17);
-            this.lblPolicyName.TabIndex = 8;
-            this.lblPolicyName.Text = "Policy name";
-            // 
             // lblId
             // 
             this.lblId.AutoSize = true;
-            this.lblId.Font = new System.Drawing.Font("UD Digi Kyokasho NK-B", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblId.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblId.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblId.Location = new System.Drawing.Point(64, 21);
             this.lblId.Name = "lblId";
-            this.lblId.Size = new System.Drawing.Size(77, 17);
+            this.lblId.Size = new System.Drawing.Size(72, 18);
             this.lblId.TabIndex = 7;
             this.lblId.Text = "Policy Id";
             // 
@@ -139,7 +103,7 @@
             // btnDelete
             // 
             this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDelete.Font = new System.Drawing.Font("UD Digi Kyokasho NK-B", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnDelete.Location = new System.Drawing.Point(282, 17);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(94, 30);
@@ -150,10 +114,10 @@
             // lblSearch
             // 
             this.lblSearch.AutoSize = true;
-            this.lblSearch.Font = new System.Drawing.Font("UD Digi Kyokasho NK-B", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblSearch.Location = new System.Drawing.Point(565, 22);
             this.lblSearch.Name = "lblSearch";
-            this.lblSearch.Size = new System.Drawing.Size(41, 17);
+            this.lblSearch.Size = new System.Drawing.Size(39, 18);
             this.lblSearch.TabIndex = 18;
             this.lblSearch.Text = "Cari";
             // 
@@ -170,7 +134,7 @@
             // btnEdit
             // 
             this.btnEdit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEdit.Font = new System.Drawing.Font("UD Digi Kyokasho NK-B", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnEdit.Location = new System.Drawing.Point(173, 17);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(94, 30);
@@ -181,7 +145,7 @@
             // btnAdd
             // 
             this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAdd.Font = new System.Drawing.Font("UD Digi Kyokasho NK-B", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnAdd.Location = new System.Drawing.Point(64, 17);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(94, 30);
@@ -252,6 +216,42 @@
             this.btnSave.Text = "Simpan";
             this.btnSave.UseVisualStyleBackColor = true;
             // 
+            // txtDetails
+            // 
+            this.txtDetails.Location = new System.Drawing.Point(173, 94);
+            this.txtDetails.Name = "txtDetails";
+            this.txtDetails.Size = new System.Drawing.Size(336, 27);
+            this.txtDetails.TabIndex = 11;
+            // 
+            // lblDetails
+            // 
+            this.lblDetails.AutoSize = true;
+            this.lblDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblDetails.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblDetails.Location = new System.Drawing.Point(64, 97);
+            this.lblDetails.Name = "lblDetails";
+            this.lblDetails.Size = new System.Drawing.Size(60, 18);
+            this.lblDetails.TabIndex = 12;
+            this.lblDetails.Text = "Details";
+            // 
+            // lblPolicyName
+            // 
+            this.lblPolicyName.AutoSize = true;
+            this.lblPolicyName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblPolicyName.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblPolicyName.Location = new System.Drawing.Point(64, 59);
+            this.lblPolicyName.Name = "lblPolicyName";
+            this.lblPolicyName.Size = new System.Drawing.Size(100, 18);
+            this.lblPolicyName.TabIndex = 8;
+            this.lblPolicyName.Text = "Policy name";
+            // 
+            // txtPolicyName
+            // 
+            this.txtPolicyName.Location = new System.Drawing.Point(173, 56);
+            this.txtPolicyName.Name = "txtPolicyName";
+            this.txtPolicyName.Size = new System.Drawing.Size(336, 27);
+            this.txtPolicyName.TabIndex = 10;
+            // 
             // AdminPolicyMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -280,10 +280,6 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox txtId;
-        private System.Windows.Forms.Label lblDetails;
-        private System.Windows.Forms.TextBox txtDetails;
-        private System.Windows.Forms.TextBox txtPolicyName;
-        private System.Windows.Forms.Label lblPolicyName;
         private System.Windows.Forms.Label lblId;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button btnDelete;
@@ -297,5 +293,9 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Label lblDetails;
+        private System.Windows.Forms.TextBox txtDetails;
+        private System.Windows.Forms.TextBox txtPolicyName;
+        private System.Windows.Forms.Label lblPolicyName;
     }
 }

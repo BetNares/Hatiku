@@ -9,6 +9,7 @@ namespace Hatiku.Models.IRepository
     public interface IAdminPolicyRepository
     {
         IEnumerable<AdminPolicy> FetchAll();
+        IEnumerable<AdminPolicy> FindByValue(string value);
         bool Check(int userId, int policyId);
         bool Add(AdminPolicy admin);
         bool Delete(int userId, int policyId);

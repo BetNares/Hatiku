@@ -25,10 +25,16 @@ namespace Hatiku
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
+
             string connectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
+
             IAdminMainMenuView adminMenuView = new AdminMainMenu();
             new AdminMainMenuPresenter(adminMenuView, connectionString);
 
+            //IMainEntryView mainEntryView = new MainEntryForm();
+            //_ = new MainEntryPresenter(mainEntryView, connectionString);
+
+            //Application.Run((Form)mainEntryView);
             Application.Run((Form)adminMenuView);
         }
     }

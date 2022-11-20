@@ -13,8 +13,7 @@ namespace Hatiku.Forms
 {
     public partial class MainEntryForm : Form, IMainEntryView
     {
-        DoctorHomeForm _doctorHomeForm;
-        LogInForm _logInForm;
+
         public MainEntryForm()
         {
             InitializeComponent();

@@ -1,4 +1,5 @@
-﻿using Hatiku.Views;
+﻿using Hatiku.Forms;
+using Hatiku.Views;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,29 +11,33 @@ namespace Hatiku.Presenters
 {
     public class MainEntryPresenter
     {
-        private IMainEntryView view;
-        private string connString;
+        private IMainEntryView _view;
+        private string _connString;
 
         public MainEntryPresenter(IMainEntryView view, string connString)
         {
-            this.view = view;
-            this.connString = connString;
+            _view = view;
+            _connString = connString;
 
-            this.view.ShowDoctorHome += ShowDoctorHome;
-            this.view.ShowAdminLogin += ShowAdminLogin;
+            _view.ShowDoctorHome += ShowDoctorHome;
+            _view.ShowAdminLogin += ShowAdminLogin;
 
-            ((Form)this.view).Show();
+            ((Form)_view).Show();
 
         }
 
         private void ShowAdminLogin(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            LogInForm loginForm = LogInForm.GetMenu();
+            new LoginPresenter(loginForm, _connString);
+            ((Form)_view).Hide();
         }
 
         private void ShowDoctorHome(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            DoctorHomeForm doctorHomeForm = DoctorHomeForm.GetMenu();
+            new DoctorHomePresenter(doctorHomeForm, _connString);
+            ((Form)_view).Hide();
         }
     }
 }

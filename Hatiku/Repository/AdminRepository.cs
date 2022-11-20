@@ -194,11 +194,6 @@ namespace Hatiku.Repository
             }
         }
 
-        public int GetId(string username)
-        {
-            Admin admin = (Admin)FindByValue(username);
-            return admin.Id;
-        }
 
         public bool Login(string username, string password)
         {

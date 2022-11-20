@@ -14,9 +14,6 @@ namespace Hatiku.Forms
 
     public partial class DoctorHomeForm : Form, IDoctorHomeView
     {
-        AboutForm _profileForm;
-        InputDataForm _InputDataForm;
-
         public event EventHandler ShowInputForm;
         public event EventHandler ShowAboutForm;
 
@@ -38,17 +35,6 @@ namespace Hatiku.Forms
             this.Close();
         }
 
-        private void btnCheckProfile_Click(object sender, EventArgs e)
-        {
-            //_profileForm = new AboutForm();
-
-            //_profileForm.Location = this.Location;
-            //_profileForm.StartPosition = FormStartPosition.Manual;
-            //_profileForm.FormClosing += delegate { this.Show(); };
-            //_profileForm.Show();
-            //this.Hide();
-        }
-
         private void btnStartTest_Click(object sender, EventArgs e)
         {
             //_InputDataForm = new InputDataForm();
@@ -59,5 +45,22 @@ namespace Hatiku.Forms
             //_InputDataForm.Show();
             //this.Hide();
         }
+
+        private static DoctorHomeForm _doctorHomeForm;
+        public static DoctorHomeForm GetMenu()
+        {
+            if (_doctorHomeForm == null || _doctorHomeForm.IsDisposed)
+            {
+                _doctorHomeForm = new DoctorHomeForm();
+            }
+            else
+            {
+                _doctorHomeForm.WindowState = _doctorHomeForm.WindowState == FormWindowState.Minimized ?
+                                                    FormWindowState.Normal : _doctorHomeForm.WindowState;
+                _doctorHomeForm.BringToFront();
+            }
+            return _doctorHomeForm;
+        }
+
     }
 }
