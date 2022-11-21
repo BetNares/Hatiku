@@ -54,14 +54,15 @@ namespace Hatiku.Presenters
 
         private void ShowDiagnosisDataView(object sender, EventArgs e)
         {
-            //DiagnosisData diagnosisDataForm = DiagnosisData.GetMenu((AdminMainMenu)adminMainMenuView, connectionString);
-            IErrorHandlerView errorHandler = ErrorHandlerForm.GetMenu((AdminMainMenu)adminMainMenuView);
+            DiagnosisData diagnosisDataForm = DiagnosisData.GetMenu((AdminMainMenu)adminMainMenuView, connectionString);
 
-            string msgTitle = "Tidak Ada Izin";
-            string msg = "Anda tidak memiliki izin untuk mengakses menu ini. " +
-                "Hubungi Administrator Anda untuk meminta izin akses.";
+            //IErrorHandlerView errorHandler = ErrorHandlerForm.GetMenu((AdminMainMenu)adminMainMenuView);
 
-            _ = new ErrorHandlerFormPresenter(errorHandler, msgTitle, msg);
+            //string msgTitle = "Tidak Ada Izin";
+            //string msg = "Anda tidak memiliki izin untuk mengakses menu ini. " +
+            //    "Hubungi Administrator Anda untuk meminta izin akses.";
+
+            //_ = new ErrorHandlerFormPresenter(errorHandler, msgTitle, msg);
         }
     }
 }

@@ -14,7 +14,7 @@ namespace Hatiku
     public partial class DiagnosisData : Form
     {
         private NpgsqlConnection conn;
-        private string connstring = "Host=localhost;Port=5432;Username=postgres;Password=admin;Database=Hatiku-Junpro";
+        private string connstring;
         public DataTable dt;
         public static NpgsqlCommand cmd;
         private string sql = null;
@@ -25,6 +25,7 @@ namespace Hatiku
         {
             InitializeComponent();
             this.connstring = connectionString;
+            this.Show();
         }
         private void DatabaseAdministratorPage_Load(object sender, EventArgs e)
         {
@@ -44,7 +45,7 @@ namespace Hatiku
             {
                 conn.Open();
                 dgvData.DataSource = null;
-                sql = "select * from st_select()";
+                sql = "select * from st_select_all_diseasediagnosishistory()";
                 cmd = new NpgsqlCommand(sql, conn);
                 dt = new DataTable();
                 NpgsqlDataReader rd = cmd.ExecuteReader();
@@ -63,7 +64,7 @@ namespace Hatiku
             try
             {
                 conn.Open();
-                sql = "select * from st_insert(:_Age,:_Gender,:_Weight,:_Height,:_AP_high,:_AP_low,:_Cholesterol,:_Glucose,:_ActiveSmoker,:_AlcoholConsumer,:_PhysicallyActive,:_AtRiskOfCVD)";
+                sql = "select * from st_insert_diseasediagnosishistory(:_Age,:_Gender,:_Weight,:_Height,:_AP_high,:_AP_low,:_Cholesterol,:_Glucose,:_ActiveSmoker,:_AlcoholConsumer,:_PhysicallyActive,:_AtRiskOfCVD)";
                 cmd = new NpgsqlCommand(sql, conn);
                 cmd.Parameters.AddWithValue("_Age", Int32.Parse(tb_Age.Text));
                 cmd.Parameters.AddWithValue("_Gender", Int32.Parse(tb_Gender.Text));
@@ -133,7 +134,7 @@ namespace Hatiku
             try
             {
                 conn.Open();
-                sql = "select * from st_update_diagnosisdata(:_Id,:_Age,:_Gender,:_Weight,:_Height,:_AP_high,:_AP_low,:_Cholesterol,:_Glucose,:_ActiveSmoker,:_AlcoholConsumer,:_PhysicallyActive,:_AtRiskOfCVD)";
+                sql = "select * from st_update_diseasediagnosishistory(:_Id,:_Age,:_Gender,:_Weight,:_Height,:_AP_high,:_AP_low,:_Cholesterol,:_Glucose,:_ActiveSmoker,:_AlcoholConsumer,:_PhysicallyActive,:_AtRiskOfCVD)";
                 cmd = new NpgsqlCommand(sql, conn);
                 cmd.Parameters.AddWithValue("_Id", r.Cells["_Id"].Value.ToString());
                 cmd.Parameters.AddWithValue("_Age", Int32.Parse(tb_Age.Text));
@@ -175,7 +176,7 @@ namespace Hatiku
                 try
                 {
                     conn.Open();
-                    sql = @"select * from st_delete_diagnosisdata(:_id)";
+                    sql = @"select * from st_delete_diseasediagnosishistory(:_Id)";
                     cmd = new NpgsqlCommand(sql, conn);
                     cmd.Parameters.AddWithValue("_Id", r.Cells["_Id"].Value.ToString());
                     if ((int)cmd.ExecuteScalar() == 1)

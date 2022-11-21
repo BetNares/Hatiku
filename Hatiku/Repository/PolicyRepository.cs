@@ -196,6 +196,7 @@ namespace Hatiku.Repository
         public int GetId(string policyName)
         {
             Policy policy = FindByValue(policyName).First();
+            MessageBox.Show(policy.Name.ToString());
             return GetId(policy);
         }
 
