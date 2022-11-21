@@ -3,8 +3,11 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Net;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
@@ -14,7 +17,6 @@ namespace Hatiku.Forms {
     public partial class InputDataForm : Form
     {
         private Dictionary<string, string> ExpertSystemInput = new Dictionary<string, string>();
-        private Dictionary<string, string> MachineLearningInput = new Dictionary<string, string>();
 
 
 
@@ -29,25 +31,23 @@ namespace Hatiku.Forms {
             this.Close();
         }
 
-        private void InputFetch(object sender, EventArgs e)
+        private string InputFetch()
         {
 
-            MachineLearningInput["key"] = "value";
 
-            MachineLearningInput.Add("age", inputAge.Text);
-            MachineLearningInput.Add("gender", inputGender.Text);
-            MachineLearningInput.Add("height", inputHeight.Text);
-            MachineLearningInput.Add("weight", inputWeight.Text);
-            MachineLearningInput.Add("ap_hi", inputAPHigh.Text);
-            MachineLearningInput.Add("ap_lo", inputAPLow.Text);
-            MachineLearningInput.Add("cholesterol", inputCholesterol.Text);
-            MachineLearningInput.Add("gluc", inputGlucose.Text);
-            MachineLearningInput.Add("smoke", inputSmoke.Text);
-            MachineLearningInput.Add("alco", inputAlcohol.Text);
-            MachineLearningInput.Add("active", inputActive.Text);
-            MachineLearningInput.Add("racial_identity", InputRacialIdentity.Text);
+            ExpertSystemInput.Add("age", inputAge.Text);
+            ExpertSystemInput.Add("gender", inputGender.Text);
+            ExpertSystemInput.Add("height", inputHeight.Text);
+            ExpertSystemInput.Add("weight", inputWeight.Text);
+            ExpertSystemInput.Add("ap_hi", inputAPHigh.Text);
+            ExpertSystemInput.Add("ap_lo", inputAPLow.Text);
+            ExpertSystemInput.Add("cholesterol", inputCholesterol.Text);
+            ExpertSystemInput.Add("gluc", inputGlucose.Text);
+            ExpertSystemInput.Add("smoke", inputSmoke.Text);
+            ExpertSystemInput.Add("alco", inputAlcohol.Text);
+            ExpertSystemInput.Add("active", inputActive.Text);
+            ExpertSystemInput.Add("racial_identity", InputRacialIdentity.Text);
 
-            ExpertSystemInput["key"] = "value";
 
 
             if (blood_clotting_disorder1.Checked)
@@ -225,6 +225,27 @@ namespace Hatiku.Forms {
             else if (personal_family_history_blood_bloodvesseldisease0.Checked)
                 ExpertSystemInput.Add("personal_family_history_blood_bloodvesseldisease", "0");
 
+
+            var url = "https://cvd-diagnosis-api.herokuapp.com/diagnose/";
+
+            var httpWebRequest = (HttpWebRequest)WebRequest.Create(url);
+            httpWebRequest.ContentType = "application/json";
+            httpWebRequest.Method = "POST";
+
+            using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
+            {
+                string json = JsonSerializer.Serialize(ExpertSystemInput);
+                Console.WriteLine(json);
+                streamWriter.Write(json);
+            }
+
+            var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
+            using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
+            {
+                var result = streamReader.ReadToEnd();
+                return result;
+            }
+
         }
 
         private void label5_Click(object sender, EventArgs e)
@@ -234,6 +255,13 @@ namespace Hatiku.Forms {
 
         private void label5_Click_1(object sender, EventArgs e)
         {
+
+        }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            
+            ResultForm resultForm = new ResultForm(InputFetch());
 
         }
     }

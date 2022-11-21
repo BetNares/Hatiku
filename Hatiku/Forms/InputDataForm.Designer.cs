@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label46 = new System.Windows.Forms.Label();
+            this.InputRacialIdentity = new System.Windows.Forms.DomainUpDown();
+            this.label47 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -206,9 +209,6 @@
             this.lblSymptoms = new System.Windows.Forms.Label();
             this.blood_clotting_disorder0 = new System.Windows.Forms.RadioButton();
             this.blood_clotting_disorder1 = new System.Windows.Forms.RadioButton();
-            this.label46 = new System.Windows.Forms.Label();
-            this.InputRacialIdentity = new System.Windows.Forms.DomainUpDown();
-            this.label47 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel38.SuspendLayout();
@@ -293,6 +293,35 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(806, 724);
             this.panel1.TabIndex = 0;
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Font = new System.Drawing.Font("UD Digi Kyokasho NK-B", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label46.Location = new System.Drawing.Point(494, 713);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(115, 17);
+            this.label46.TabIndex = 33;
+            this.label46.Text = "(Keterangan)";
+            // 
+            // InputRacialIdentity
+            // 
+            this.InputRacialIdentity.Location = new System.Drawing.Point(256, 709);
+            this.InputRacialIdentity.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.InputRacialIdentity.Name = "InputRacialIdentity";
+            this.InputRacialIdentity.Size = new System.Drawing.Size(211, 27);
+            this.InputRacialIdentity.TabIndex = 32;
+            this.InputRacialIdentity.Text = "0";
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Font = new System.Drawing.Font("UD Digi Kyokasho NK-B", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label47.Location = new System.Drawing.Point(60, 712);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(165, 24);
+            this.label47.TabIndex = 31;
+            this.label47.Text = "Racial Identity";
             // 
             // label11
             // 
@@ -606,6 +635,7 @@
             this.btnSubmit.TabIndex = 24;
             this.btnSubmit.Text = "Save all and submit";
             this.btnSubmit.UseVisualStyleBackColor = false;
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
             // lblClose
             // 
@@ -2168,35 +2198,6 @@
             this.blood_clotting_disorder1.TabStop = true;
             this.blood_clotting_disorder1.Text = "Yes";
             this.blood_clotting_disorder1.UseVisualStyleBackColor = true;
-            // 
-            // label46
-            // 
-            this.label46.AutoSize = true;
-            this.label46.Font = new System.Drawing.Font("UD Digi Kyokasho NK-B", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label46.Location = new System.Drawing.Point(494, 713);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(115, 17);
-            this.label46.TabIndex = 33;
-            this.label46.Text = "(Keterangan)";
-            // 
-            // InputRacialIdentity
-            // 
-            this.InputRacialIdentity.Location = new System.Drawing.Point(256, 709);
-            this.InputRacialIdentity.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.InputRacialIdentity.Name = "InputRacialIdentity";
-            this.InputRacialIdentity.Size = new System.Drawing.Size(211, 27);
-            this.InputRacialIdentity.TabIndex = 32;
-            this.InputRacialIdentity.Text = "0";
-            // 
-            // label47
-            // 
-            this.label47.AutoSize = true;
-            this.label47.Font = new System.Drawing.Font("UD Digi Kyokasho NK-B", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label47.Location = new System.Drawing.Point(60, 712);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(165, 24);
-            this.label47.TabIndex = 31;
-            this.label47.Text = "Racial Identity";
             // 
             // InputDataForm
             // 

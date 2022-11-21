@@ -12,9 +12,18 @@ namespace Hatiku.Forms
 {
     public partial class ResultForm : Form
     {
-        public ResultForm()
+        public ResultForm(string result)
         {
             InitializeComponent();
+            TextBoxResult.Text = result;
+        }
+
+
+
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
