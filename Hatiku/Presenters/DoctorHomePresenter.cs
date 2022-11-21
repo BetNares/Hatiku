@@ -12,12 +12,12 @@ namespace Hatiku.Presenters
     public class DoctorHomePresenter
     {
         private IDoctorHomeView _view;
-        private string connString;
+        private string _connString;
 
         public DoctorHomePresenter(IDoctorHomeView view, string connString)
         {
             this._view = view;
-            this.connString = connString;
+            this._connString = connString;
 
             this._view.ShowAboutForm += ShowAbout;
             this._view.ShowInputForm += ShowInputForm;
@@ -27,16 +27,14 @@ namespace Hatiku.Presenters
 
         private void ShowInputForm(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
-            //var inputForm = new InputForm();
-            //((Form)_view).Close();
-            //inputForm.Show();
+            InputDataForm inputDataForm = new InputDataForm();
+            ((Form)_view).Hide();
         }
 
         private void ShowAbout(object sender, EventArgs e)
         {
             var aboutForm = new AboutForm();
-            ((Form)_view).Close();
+            ((Form)_view).Hide();
             aboutForm.Show();
             
         }

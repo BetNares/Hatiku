@@ -15,7 +15,6 @@ namespace Hatiku.Forms
     public partial class LogInForm : Form, ILoginForm
     {
         public event EventHandler Login;
-        public event EventHandler ShowSignInForm;
 
         public string Username 
         { 

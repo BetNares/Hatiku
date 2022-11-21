@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Hatiku.Utils
 {
@@ -14,7 +15,6 @@ namespace Hatiku.Utils
         private static IAdminPolicyRepository _adminPolicyRepo;
         private static IPolicyRepository _policyRepo;
         private static Admin _currAdmin = null;
-        private static List<string> _adminPermission;
 
         public static void Initialize(IAdminRepository adminRepo, IPolicyRepository policyRepo, IAdminPolicyRepository adminPolicyRepo)
         {
@@ -43,7 +43,9 @@ namespace Hatiku.Utils
 
         public static bool Login(string username, string password)
         {
-            if (_adminRepo.Login(username, password))
+            bool isAccess = _adminRepo.Login(username, password);
+            MessageBox.Show(isAccess.ToString());
+            if (isAccess)
             {
                 SetCurrentAdmin(username);
 
@@ -55,7 +57,7 @@ namespace Hatiku.Utils
 
         private static void SetCurrentAdmin(string username)
         {
-            _currAdmin = (Admin)_adminRepo.FindByValue(username);
+            _currAdmin = _adminRepo.FindByUsername(username);
         }
     }
 }

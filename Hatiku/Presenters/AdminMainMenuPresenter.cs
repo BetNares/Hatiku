@@ -25,26 +25,9 @@ namespace Hatiku.Presenters
             this.adminMainMenuView.ShowAdminView += ShowAdminView;
             this.adminMainMenuView.ShowPolicyView += ShowPolicyView;
             this.adminMainMenuView.ShowAdminPolicyView += ShowAdminPolicyView;
-            this.adminMainMenuView.ShowRuleView += ShowRuleView;
-            this.adminMainMenuView.ShowRiskDiagnosisResult += ShowRiskDiagnosisResult;
-            this.adminMainMenuView.ShowRiskDiagnosisHistory += ShowRiskDiagnosisHistory;
+            this.adminMainMenuView.ShowDiagnosisData += ShowDiagnosisDataView;
 
             ((Form)adminMainMenuView).Show();
-        }
-
-        private void ShowRiskDiagnosisHistory(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
-
-        private void ShowRiskDiagnosisResult(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
-
-        private void ShowRuleView(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
         }
 
         private void ShowAdminPolicyView(object sender, EventArgs e)
@@ -59,14 +42,26 @@ namespace Hatiku.Presenters
             //throw new NotImplementedException();
             IPolicyView policyView = AdminPolicyMenu.GetMenu((AdminMainMenu)adminMainMenuView);
             IPolicyRepository policyRepository = new PolicyRepository(connectionString);
-            new PolicyPresenter(policyRepository, policyView);
+            _ = new PolicyPresenter(policyView, policyRepository);
         }
 
         private void ShowAdminView(object sender, EventArgs e)
         {
             IAdminView adminView = AdminDataMenu.GetMenu((AdminMainMenu)adminMainMenuView);
             IAdminRepository adminRepository = new AdminRepository(connectionString);
-            new AdminPresenter(adminRepository, adminView);
+            _ = new AdminPresenter(adminRepository, adminView);
+        }
+
+        private void ShowDiagnosisDataView(object sender, EventArgs e)
+        {
+            //DiagnosisData diagnosisDataForm = DiagnosisData.GetMenu((AdminMainMenu)adminMainMenuView, connectionString);
+            IErrorHandlerView errorHandler = ErrorHandlerForm.GetMenu((AdminMainMenu)adminMainMenuView);
+
+            string msgTitle = "Tidak Ada Izin";
+            string msg = "Anda tidak memiliki izin untuk mengakses menu ini. " +
+                "Hubungi Administrator Anda untuk meminta izin akses.";
+
+            _ = new ErrorHandlerFormPresenter(errorHandler, msgTitle, msg);
         }
     }
 }

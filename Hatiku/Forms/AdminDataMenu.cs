@@ -26,6 +26,12 @@ namespace Hatiku.Forms
         {
             InitializeComponent();
             AssociateAndRaiseEvents();
+            this._permissions = new List<string>()
+            {
+                "AdministratorFullAccess",
+                "AdministratorAdminDataAccess",
+                "AdministratorAdminDataAndPolicyAccess"
+            };
         }
 
         public int UserId 
@@ -124,8 +130,12 @@ namespace Hatiku.Forms
 
         public new void Show()
         {
+            bool isAuthorized = AccessControl.CheckAuthorization(this._permissions);
+
+            MessageBox.Show(isAuthorized.ToString());
+
             // Cek terlebih dahulu apakah admin boleh mengakses atau tidak
-            if (AccessControl.CheckAuthorization(_permissions))
+            if (isAuthorized)
                 base.Show();
             else
             {

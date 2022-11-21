@@ -9,6 +9,7 @@ using Hatiku.Models.IRepository;
 using Hatiku.Presenters;
 using Hatiku.Repository;
 using System.Configuration;
+using Hatiku.Utils;
 
 namespace Hatiku
 {
@@ -28,14 +29,20 @@ namespace Hatiku
 
             string connectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
 
-            IAdminMainMenuView adminMenuView = new AdminMainMenu();
-            new AdminMainMenuPresenter(adminMenuView, connectionString);
 
-            //IMainEntryView mainEntryView = new MainEntryForm();
-            //_ = new MainEntryPresenter(mainEntryView, connectionString);
+            AccessControl.Initialize (
+                new AdminRepository(connectionString),
+                new PolicyRepository(connectionString),
+                new AdminPolicyRepository(connectionString)
+                );
+            //IAdminMainMenuView adminMenuView = new AdminMainMenu();
+            //new AdminMainMenuPresenter(adminMenuView, connectionString);
 
-            //Application.Run((Form)mainEntryView);
-            Application.Run((Form)adminMenuView);
+            IMainEntryView mainEntryView = new MainEntryForm();
+            _ = new MainEntryPresenter(mainEntryView, connectionString);
+
+            Application.Run((Form)mainEntryView);
+            //Application.Run((Form)adminMenuView);
         }
     }
 }

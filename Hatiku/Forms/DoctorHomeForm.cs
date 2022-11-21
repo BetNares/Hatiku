@@ -35,17 +35,6 @@ namespace Hatiku.Forms
             this.Close();
         }
 
-        private void btnStartTest_Click(object sender, EventArgs e)
-        {
-            //_InputDataForm = new InputDataForm();
-
-            //_InputDataForm.Location = this.Location;
-            //_InputDataForm.StartPosition = FormStartPosition.Manual;
-            //_InputDataForm.FormClosing += delegate { this.Show(); };
-            //_InputDataForm.Show();
-            //this.Hide();
-        }
-
         private static DoctorHomeForm _doctorHomeForm;
         public static DoctorHomeForm GetMenu()
         {

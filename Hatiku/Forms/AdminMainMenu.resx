@@ -272,194 +272,104 @@
   <data name="&gt;&gt;pnlAdminAndPolicy.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="btnRiskDiagnosisHistory.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="btnDiagnosisData.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="btnRiskDiagnosisHistory.Font" type="System.Drawing.Font, System.Drawing.Common">
+  <data name="btnDiagnosisData.Font" type="System.Drawing.Font, System.Drawing.Common">
     <value>Segoe UI Semibold, 10.2pt, style=Bold</value>
   </data>
-  <data name="btnRiskDiagnosisHistory.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing.Common">
+  <data name="btnDiagnosisData.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing.Common">
     <value>MiddleLeft</value>
   </data>
-  <data name="btnRiskDiagnosisHistory.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="btnDiagnosisData.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="btnRiskDiagnosisHistory.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>0, 191</value>
+  <data name="btnDiagnosisData.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>0, 69</value>
   </data>
-  <data name="btnRiskDiagnosisHistory.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms.Primitives">
+  <data name="btnDiagnosisData.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms.Primitives">
     <value>15, 0, 0, 0</value>
   </data>
-  <data name="btnRiskDiagnosisHistory.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>248, 64</value>
+  <data name="btnDiagnosisData.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>248, 67</value>
   </data>
-  <data name="btnRiskDiagnosisHistory.TabIndex" type="System.Int32, System.Private.CoreLib">
-    <value>8</value>
-  </data>
-  <data name="btnRiskDiagnosisHistory.Text" xml:space="preserve">
-    <value>     Risk History</value>
-  </data>
-  <data name="btnRiskDiagnosisHistory.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing.Common">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="btnRiskDiagnosisHistory.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageBeforeText</value>
-  </data>
-  <data name="&gt;&gt;btnRiskDiagnosisHistory.Name" xml:space="preserve">
-    <value>btnRiskDiagnosisHistory</value>
-  </data>
-  <data name="&gt;&gt;btnRiskDiagnosisHistory.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnRiskDiagnosisHistory.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;btnRiskDiagnosisHistory.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btnRiskDiagnosisResult.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btnRiskDiagnosisResult.Font" type="System.Drawing.Font, System.Drawing.Common">
-    <value>Segoe UI Semibold, 10.2pt, style=Bold</value>
-  </data>
-  <data name="btnRiskDiagnosisResult.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing.Common">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="btnRiskDiagnosisResult.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnRiskDiagnosisResult.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>0, 127</value>
-  </data>
-  <data name="btnRiskDiagnosisResult.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms.Primitives">
-    <value>15, 0, 0, 0</value>
-  </data>
-  <data name="btnRiskDiagnosisResult.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>248, 64</value>
-  </data>
-  <data name="btnRiskDiagnosisResult.TabIndex" type="System.Int32, System.Private.CoreLib">
+  <data name="btnDiagnosisData.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>7</value>
   </data>
-  <data name="btnRiskDiagnosisResult.Text" xml:space="preserve">
+  <data name="btnDiagnosisData.Text" xml:space="preserve">
     <value>     Diagnosis Result</value>
   </data>
-  <data name="btnRiskDiagnosisResult.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing.Common">
+  <data name="btnDiagnosisData.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing.Common">
     <value>MiddleLeft</value>
   </data>
-  <data name="btnRiskDiagnosisResult.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+  <data name="btnDiagnosisData.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
     <value>ImageBeforeText</value>
   </data>
-  <data name="&gt;&gt;btnRiskDiagnosisResult.Name" xml:space="preserve">
-    <value>btnRiskDiagnosisResult</value>
+  <data name="&gt;&gt;btnDiagnosisData.Name" xml:space="preserve">
+    <value>btnDiagnosisData</value>
   </data>
-  <data name="&gt;&gt;btnRiskDiagnosisResult.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnDiagnosisData.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btnRiskDiagnosisResult.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnDiagnosisData.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
-  <data name="&gt;&gt;btnRiskDiagnosisResult.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;btnDiagnosisData.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="lblExpertSystem.AutoSize" type="System.Boolean, System.Private.CoreLib">
+  <data name="lblMLAndExpertSystem.AutoSize" type="System.Boolean, System.Private.CoreLib">
     <value>True</value>
   </data>
-  <data name="lblExpertSystem.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="lblMLAndExpertSystem.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="lblExpertSystem.Font" type="System.Drawing.Font, System.Drawing.Common">
+  <data name="lblMLAndExpertSystem.Font" type="System.Drawing.Font, System.Drawing.Common">
     <value>Segoe UI, 10.2pt, style=Bold</value>
   </data>
-  <data name="lblExpertSystem.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="lblMLAndExpertSystem.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="lblExpertSystem.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+  <data name="lblMLAndExpertSystem.Location" type="System.Drawing.Point, System.Drawing.Primitives">
     <value>0, 0</value>
   </data>
-  <data name="lblExpertSystem.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms.Primitives">
+  <data name="lblMLAndExpertSystem.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms.Primitives">
     <value>3, 3, 3, 3</value>
   </data>
-  <data name="lblExpertSystem.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms.Primitives">
+  <data name="lblMLAndExpertSystem.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms.Primitives">
     <value>20, 20, 20, 20</value>
   </data>
-  <data name="lblExpertSystem.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+  <data name="lblMLAndExpertSystem.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>No</value>
   </data>
-  <data name="lblExpertSystem.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>165, 63</value>
+  <data name="lblMLAndExpertSystem.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>127, 63</value>
   </data>
-  <data name="lblExpertSystem.TabIndex" type="System.Int32, System.Private.CoreLib">
+  <data name="lblMLAndExpertSystem.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>6</value>
   </data>
-  <data name="lblExpertSystem.Text" xml:space="preserve">
-    <value>Expert System</value>
+  <data name="lblMLAndExpertSystem.Text" xml:space="preserve">
+    <value>Diagnosis</value>
   </data>
-  <data name="lblExpertSystem.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing.Common">
+  <data name="lblMLAndExpertSystem.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing.Common">
     <value>MiddleLeft</value>
   </data>
-  <data name="&gt;&gt;lblExpertSystem.Name" xml:space="preserve">
-    <value>lblExpertSystem</value>
+  <data name="&gt;&gt;lblMLAndExpertSystem.Name" xml:space="preserve">
+    <value>lblMLAndExpertSystem</value>
   </data>
-  <data name="&gt;&gt;lblExpertSystem.Type" xml:space="preserve">
+  <data name="&gt;&gt;lblMLAndExpertSystem.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;lblExpertSystem.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lblMLAndExpertSystem.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
-  <data name="&gt;&gt;lblExpertSystem.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="btnRule.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btnRule.Font" type="System.Drawing.Font, System.Drawing.Common">
-    <value>Segoe UI Semibold, 10.2pt, style=Bold</value>
-  </data>
-  <data name="btnRule.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing.Common">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="btnRule.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btnRule.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>0, 63</value>
-  </data>
-  <data name="btnRule.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms.Primitives">
-    <value>15, 0, 0, 0</value>
-  </data>
-  <data name="btnRule.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>248, 64</value>
-  </data>
-  <data name="btnRule.TabIndex" type="System.Int32, System.Private.CoreLib">
-    <value>2</value>
-  </data>
-  <data name="btnRule.Text" xml:space="preserve">
-    <value>     Knowledge Base</value>
-  </data>
-  <data name="btnRule.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing.Common">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="btnRule.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageBeforeText</value>
-  </data>
-  <data name="&gt;&gt;btnRule.Name" xml:space="preserve">
-    <value>btnRule</value>
-  </data>
-  <data name="&gt;&gt;btnRule.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=5.0.5.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnRule.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;btnRule.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;lblMLAndExpertSystem.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing.Primitives">
     <value>0, 288</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing.Primitives">
-    <value>248, 256</value>
+    <value>248, 136</value>
   </data>
   <data name="panel1.TabIndex" type="System.Int32, System.Private.CoreLib">
     <value>5</value>

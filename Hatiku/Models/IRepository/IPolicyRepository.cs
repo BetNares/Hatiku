@@ -14,7 +14,7 @@ namespace Hatiku.Models.IRepository
         int GetId(string policyName);
         int GetId(Policy policy);
         bool Add (Policy policy);
-        bool Edit(int id);
+        bool Edit(Policy policy);
         bool Delete(int id);
     }
 }
