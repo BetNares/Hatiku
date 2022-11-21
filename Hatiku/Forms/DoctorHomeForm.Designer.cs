@@ -62,7 +62,6 @@
             this.btnStartTest.Text = "Start data input";
             this.btnStartTest.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnStartTest.UseVisualStyleBackColor = false;
-            this.btnStartTest.Click += new System.EventHandler(this.btnStartTest_Click);
             // 
             // lblClose
             // 

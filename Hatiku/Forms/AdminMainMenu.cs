@@ -34,32 +34,18 @@ namespace Hatiku.Forms
                 ShowAdminPolicyView?.Invoke(this, EventArgs.Empty);
             };
 
-            // Expert System Buttons
-            btnRule.Click += delegate
+            // Diagnosis Buttons
+            btnDiagnosisData.Click += delegate
             {
-                this.lblTitle.Text = this.btnRule.Text;
-                ShowRuleView?.Invoke(this, EventArgs.Empty);
-            };
-
-            btnRiskDiagnosisResult.Click += delegate
-            {
-                this.lblTitle.Text = this.btnRiskDiagnosisResult.Text;
-                ShowRiskDiagnosisResult?.Invoke(this, EventArgs.Empty);
-            };
-
-            btnRiskDiagnosisHistory.Click += delegate
-            {
-                this.lblTitle.Text = this.btnRiskDiagnosisHistory.Text;
-                ShowRiskDiagnosisHistory?.Invoke(this, EventArgs.Empty);
+                this.lblTitle.Text = this.btnDiagnosisData.Text;
+                ShowDiagnosisData?.Invoke(this, EventArgs.Empty);
             };
         }
 
         public event EventHandler ShowAdminView;
         public event EventHandler ShowPolicyView;
         public event EventHandler ShowAdminPolicyView;
-        public event EventHandler ShowRuleView;
-        public event EventHandler ShowRiskDiagnosisResult;
-        public event EventHandler ShowRiskDiagnosisHistory;
+        public event EventHandler ShowDiagnosisData;
 
         private static AdminMainMenu _adminMainMenu;
         public static AdminMainMenu GetMenu()

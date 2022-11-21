@@ -2,7 +2,7 @@
 
 namespace Hatiku
 {
-    partial class DatabaseAdministratorPage
+    partial class DiagnosisData
     {
         /// <summary>
         /// Required designer variable.
@@ -281,7 +281,7 @@ namespace Hatiku
             this.btn_Load.UseVisualStyleBackColor = true;
             this.btn_Load.Click += new System.EventHandler(this.btn_Load_Click);
             // 
-            // DatabaseAdministratorPage
+            // DiagnosisData
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -311,7 +311,8 @@ namespace Hatiku
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "DatabaseAdministratorPage";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "DiagnosisData";
             this.Text = "DatabaseAdministratorPage";
             this.Load += new System.EventHandler(this.DatabaseAdministratorPage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvData)).EndInit();

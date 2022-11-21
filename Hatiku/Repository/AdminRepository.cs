@@ -194,10 +194,43 @@ namespace Hatiku.Repository
             }
         }
 
+        public Admin? FindByUsername(string value)
+        {
+            List<Admin> adminList = new List<Admin>();
+            _conn = new NpgsqlConnection(connectionString);
+
+            _queryString = @"select * from st_select_admin_by_username(:_value)";
+            _cmd = new NpgsqlCommand(_queryString, _conn);
+
+            try
+            {
+                _conn.Open();
+                _cmd.Parameters.AddWithValue("_value", value);
+                using (var reader = _cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        var admin = new Admin();
+                        admin.Id = (int)reader[0];
+                        admin.Username = reader[1].ToString();
+                        admin.Password = reader[2].ToString();
+                        adminList.Add(admin);
+                    }
+                }
+                _conn.Close();
+                return adminList[0];
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Error: " + e, "Error!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return null;
+            }
+        }
+
 
         public bool Login(string username, string password)
         {
-            Admin admin = (Admin)FindByValue(username);
+            Admin admin = FindByUsername(username);
             if(admin?.Username == username && admin?.Password == password)
                 return true;
 

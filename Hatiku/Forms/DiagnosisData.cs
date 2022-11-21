@@ -11,23 +11,27 @@ using System.Windows.Forms;
 
 namespace Hatiku
 {
-    public partial class DatabaseAdministratorPage : Form
+    public partial class DiagnosisData : Form
     {
-        public DatabaseAdministratorPage()
+        private NpgsqlConnection conn;
+        private string connstring;
+        public DataTable dt;
+        public static NpgsqlCommand cmd;
+        private string sql = null;
+        private DataGridViewRow r;
+
+
+        public DiagnosisData(string connectionString)
         {
             InitializeComponent();
+            this.connstring = connectionString;
+            this.Show();
         }
         private void DatabaseAdministratorPage_Load(object sender, EventArgs e)
         {
             conn = new NpgsqlConnection(connstring);
         }
 
-        private NpgsqlConnection conn;
-        string connstring = "Host=localhost;Port=5432;Username=postgres;Password=admin;Database=Hatiku-Junpro";
-        public DataTable dt;
-        public static NpgsqlCommand cmd;
-        private string sql = null;
-        private DataGridViewRow r;
 
         private int TempActiveSmoker = 0;
         private int TempAlcoholConsumer = 0;
@@ -41,7 +45,7 @@ namespace Hatiku
             {
                 conn.Open();
                 dgvData.DataSource = null;
-                sql = "select * from st_select()";
+                sql = "select * from st_select_all_diseasediagnosishistory()";
                 cmd = new NpgsqlCommand(sql, conn);
                 dt = new DataTable();
                 NpgsqlDataReader rd = cmd.ExecuteReader();
@@ -60,7 +64,7 @@ namespace Hatiku
             try
             {
                 conn.Open();
-                sql = "select * from st_insert(:_Age,:_Gender,:_Weight,:_Height,:_AP_high,:_AP_low,:_Cholesterol,:_Glucose,:_ActiveSmoker,:_AlcoholConsumer,:_PhysicallyActive,:_AtRiskOfCVD)";
+                sql = "select * from st_insert_diseasediagnosishistory(:_Age,:_Gender,:_Weight,:_Height,:_AP_high,:_AP_low,:_Cholesterol,:_Glucose,:_ActiveSmoker,:_AlcoholConsumer,:_PhysicallyActive,:_AtRiskOfCVD)";
                 cmd = new NpgsqlCommand(sql, conn);
                 cmd.Parameters.AddWithValue("_Age", Int32.Parse(tb_Age.Text));
                 cmd.Parameters.AddWithValue("_Gender", Int32.Parse(tb_Gender.Text));
@@ -130,7 +134,7 @@ namespace Hatiku
             try
             {
                 conn.Open();
-                sql = "select * from st_update(:_Id,:_Age,:_Gender,:_Weight,:_Height,:_AP_high,:_AP_low,:_Cholesterol,:_Glucose,:_ActiveSmoker,:_AlcoholConsumer,:_PhysicallyActive,:_AtRiskOfCVD)";
+                sql = "select * from st_update_diseasediagnosishistory(:_Id,:_Age,:_Gender,:_Weight,:_Height,:_AP_high,:_AP_low,:_Cholesterol,:_Glucose,:_ActiveSmoker,:_AlcoholConsumer,:_PhysicallyActive,:_AtRiskOfCVD)";
                 cmd = new NpgsqlCommand(sql, conn);
                 cmd.Parameters.AddWithValue("_Id", r.Cells["_Id"].Value.ToString());
                 cmd.Parameters.AddWithValue("_Age", Int32.Parse(tb_Age.Text));
@@ -172,7 +176,7 @@ namespace Hatiku
                 try
                 {
                     conn.Open();
-                    sql = @"select * from st_delete(:_id)";
+                    sql = @"select * from st_delete_diseasediagnosishistory(:_Id)";
                     cmd = new NpgsqlCommand(sql, conn);
                     cmd.Parameters.AddWithValue("_Id", r.Cells["_Id"].Value.ToString());
                     if ((int)cmd.ExecuteScalar() == 1)
@@ -239,6 +243,22 @@ namespace Hatiku
             }
         }
 
-
+        private static DiagnosisData _diagnosisDataForm;
+        public static DiagnosisData GetMenu(Form parentContainer, string connectionString)
+        {
+            if (_diagnosisDataForm == null || _diagnosisDataForm.IsDisposed)
+            {
+                _diagnosisDataForm = new DiagnosisData(connectionString);
+                _diagnosisDataForm.MdiParent = parentContainer;
+                _diagnosisDataForm.Dock = DockStyle.Fill;
+            }
+            else
+            {
+                _diagnosisDataForm.WindowState = _diagnosisDataForm.WindowState == FormWindowState.Minimized ?
+                                                    FormWindowState.Normal : _diagnosisDataForm.WindowState;
+                _diagnosisDataForm.BringToFront();
+            }
+            return _diagnosisDataForm;
+        }
     }
 }

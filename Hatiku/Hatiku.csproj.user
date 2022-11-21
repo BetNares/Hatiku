@@ -16,7 +16,7 @@
     <Compile Update="Forms\AdminPolicyMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\DatabaseAdministratorPage.cs">
+    <Compile Update="Forms\DiagnosisData.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\DoctorHomeForm.cs">

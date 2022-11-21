@@ -60,8 +60,8 @@ namespace Hatiku.Forms
             this.lblDetail.Name = "lblDetail";
             this.lblDetail.Size = new System.Drawing.Size(533, 127);
             this.lblDetail.TabIndex = 2;
-            this.lblDetail.Text = "Anda tidak memiliki izin untuk mengakses menu ini (Contoh)\r\n\r\nCobalah untuk mengh" +
-    "ubungi Administrator.\r\n";
+            this.lblDetail.Text = "Anda tidak memiliki izin untuk mengakses menu ini.\r\n\r\nCobalah untuk menghubungi A" +
+    "dministrator.\r\n";
             // 
             // lblTitle
             // 
@@ -96,6 +96,7 @@ namespace Hatiku.Forms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1156, 742);
             this.Controls.Add(this.panel5);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ErrorHandlerForm";
             this.Text = "ErrorHandlerForm";
             this.panel5.ResumeLayout(false);

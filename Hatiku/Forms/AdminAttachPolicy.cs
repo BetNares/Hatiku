@@ -19,6 +19,7 @@ namespace Hatiku.Forms
         private bool _isEdit;
         private bool _isSuccess;
         private string _message;
+        private List<string> _permissions;
 
         public AdminAttachPolicy()
         {
@@ -94,8 +95,6 @@ namespace Hatiku.Forms
         public event EventHandler CancelEvent;
 
         private static AdminAttachPolicy _adminAttachPolicyForm;
-        private List<string> _permissions;
-
         public static AdminAttachPolicy GetMenu(Form parentContainer)
         {
             if (_adminAttachPolicyForm == null || _adminAttachPolicyForm.IsDisposed)

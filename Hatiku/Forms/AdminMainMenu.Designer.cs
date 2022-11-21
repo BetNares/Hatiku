@@ -37,10 +37,8 @@ namespace Hatiku.Forms
             this.lblAdminAndPolicy = new System.Windows.Forms.Label();
             this.btnAdminPolicy = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnRiskDiagnosisHistory = new System.Windows.Forms.Button();
-            this.btnRiskDiagnosisResult = new System.Windows.Forms.Button();
-            this.lblExpertSystem = new System.Windows.Forms.Label();
-            this.btnRule = new System.Windows.Forms.Button();
+            this.btnDiagnosisData = new System.Windows.Forms.Button();
+            this.lblMLAndExpertSystem = new System.Windows.Forms.Label();
             this.dataHomePanel = new System.Windows.Forms.Panel();
             this.titlePanel = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
@@ -110,45 +108,25 @@ namespace Hatiku.Forms
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.btnRiskDiagnosisHistory);
-            this.panel1.Controls.Add(this.btnRiskDiagnosisResult);
-            this.panel1.Controls.Add(this.lblExpertSystem);
-            this.panel1.Controls.Add(this.btnRule);
+            this.panel1.Controls.Add(this.btnDiagnosisData);
+            this.panel1.Controls.Add(this.lblMLAndExpertSystem);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
-            // btnRiskDiagnosisHistory
+            // btnDiagnosisData
             // 
-            this.btnRiskDiagnosisHistory.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.btnRiskDiagnosisHistory.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.btnRiskDiagnosisHistory, "btnRiskDiagnosisHistory");
-            this.btnRiskDiagnosisHistory.Image = global::Hatiku.Properties.Resources.history;
-            this.btnRiskDiagnosisHistory.Name = "btnRiskDiagnosisHistory";
-            this.btnRiskDiagnosisHistory.UseVisualStyleBackColor = false;
+            this.btnDiagnosisData.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnDiagnosisData.FlatAppearance.BorderSize = 0;
+            resources.ApplyResources(this.btnDiagnosisData, "btnDiagnosisData");
+            this.btnDiagnosisData.Image = global::Hatiku.Properties.Resources.cards;
+            this.btnDiagnosisData.Name = "btnDiagnosisData";
+            this.btnDiagnosisData.UseVisualStyleBackColor = false;
             // 
-            // btnRiskDiagnosisResult
+            // lblMLAndExpertSystem
             // 
-            this.btnRiskDiagnosisResult.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.btnRiskDiagnosisResult.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.btnRiskDiagnosisResult, "btnRiskDiagnosisResult");
-            this.btnRiskDiagnosisResult.Image = global::Hatiku.Properties.Resources.cards;
-            this.btnRiskDiagnosisResult.Name = "btnRiskDiagnosisResult";
-            this.btnRiskDiagnosisResult.UseVisualStyleBackColor = false;
-            // 
-            // lblExpertSystem
-            // 
-            resources.ApplyResources(this.lblExpertSystem, "lblExpertSystem");
-            this.lblExpertSystem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblExpertSystem.Name = "lblExpertSystem";
-            // 
-            // btnRule
-            // 
-            this.btnRule.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.btnRule.FlatAppearance.BorderSize = 0;
-            resources.ApplyResources(this.btnRule, "btnRule");
-            this.btnRule.Image = global::Hatiku.Properties.Resources.fever_32px;
-            this.btnRule.Name = "btnRule";
-            this.btnRule.UseVisualStyleBackColor = false;
+            resources.ApplyResources(this.lblMLAndExpertSystem, "lblMLAndExpertSystem");
+            this.lblMLAndExpertSystem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblMLAndExpertSystem.Name = "lblMLAndExpertSystem";
             // 
             // dataHomePanel
             // 
@@ -195,14 +173,12 @@ namespace Hatiku.Forms
         private System.Windows.Forms.Panel dataHomePanel;
         private System.Windows.Forms.Panel titlePanel;
         private System.Windows.Forms.Label lblTitle;
-        private System.Windows.Forms.Button btnRule;
         private System.Windows.Forms.Button btnAdminPolicy;
         private System.Windows.Forms.Panel pnlAdminAndPolicy;
         private System.Windows.Forms.Label lblAdminAndPolicy;
         private System.Windows.Forms.Button btnPolicy;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnRiskDiagnosisHistory;
-        private System.Windows.Forms.Button btnRiskDiagnosisResult;
-        private System.Windows.Forms.Label lblExpertSystem;
+        private System.Windows.Forms.Button btnDiagnosisData;
+        private System.Windows.Forms.Label lblMLAndExpertSystem;
     }
 }

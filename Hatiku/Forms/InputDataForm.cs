@@ -23,7 +23,7 @@ namespace Hatiku.Forms {
         public InputDataForm()
         {
             InitializeComponent();
-
+            this.Show();
         }
 
         private void lblClose_Click(object sender, EventArgs e)
