@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
+            this.TextBoxResult = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -41,11 +42,21 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Your results:";
             // 
+            // TextBoxResult
+            // 
+            this.TextBoxResult.Location = new System.Drawing.Point(315, 162);
+            this.TextBoxResult.Name = "TextBoxResult";
+            this.TextBoxResult.Size = new System.Drawing.Size(801, 353);
+            this.TextBoxResult.TabIndex = 1;
+            this.TextBoxResult.Text = "";
+            this.TextBoxResult.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
+            // 
             // ResultForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1430, 677);
+            this.Controls.Add(this.TextBoxResult);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ResultForm";
@@ -58,5 +69,6 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.RichTextBox TextBoxResult;
     }
 }

@@ -53,7 +53,18 @@ C:\Users\LENOVO\source\repos\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.Forms
 C:\Users\LENOVO\source\repos\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.Forms.AboutForm.resources
 C:\Users\LENOVO\source\repos\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.Forms.AdminAttachPolicy.resources
 C:\Users\LENOVO\source\repos\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.Forms.AdminPolicyMenu.resources
+C:\Users\LENOVO\source\repos\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.DatabaseAdministratorPage.resources
 C:\Users\LENOVO\source\repos\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.Forms.DoctorHomeForm.resources
 C:\Users\LENOVO\source\repos\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.Forms.MainEntryForm.resources
 C:\Users\LENOVO\source\repos\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.Forms.ResultForm.resources
-C:\Users\LENOVO\source\repos\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.DiagnosisData.resources
+D:\Devon\Website stuff\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.Forms.AboutForm.resources
+D:\Devon\Website stuff\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.Forms.AdminAttachPolicy.resources
+D:\Devon\Website stuff\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.Forms.AdminDataMenu.resources
+D:\Devon\Website stuff\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.Forms.AdminMainMenu.resources
+D:\Devon\Website stuff\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.Forms.AdminPolicyMenu.resources
+D:\Devon\Website stuff\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.DatabaseAdministratorPage.resources
+D:\Devon\Website stuff\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.Forms.DoctorHomeForm.resources
+D:\Devon\Website stuff\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.Forms.ErrorHandlerForm.resources
+D:\Devon\Website stuff\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.Forms.MainEntryForm.resources
+D:\Devon\Website stuff\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.Forms.ResultForm.resources
+D:\Devon\Website stuff\Hatiku\Hatiku\obj\Debug\net5.0-windows\Hatiku.Properties.Resources.resources
